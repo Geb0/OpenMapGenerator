@@ -1,0 +1,12 @@
+{% extends "base.html.twig" %}
+
+{% block title %}OMG - OpenMapGenerator - {% trans %}menu.homeDescription{% endtrans %}{% endblock %}
+
+{% block body %}
+
+<h1 style="display: none;">{% trans %}menu.homeDescription{% endtrans %}</h1>
+<div class="indexBanner fullwidth center">{% trans %}bannerIndex{% endtrans %}</div>
+
+{{ include(['home/index.' ~ app.request.locale ~ '.html.twig', 'home/index.' ~ defaultLocale ~ '.html.twig']) }}
+
+{% endblock %}

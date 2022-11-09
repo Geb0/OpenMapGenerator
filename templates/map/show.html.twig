@@ -1,0 +1,97 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}OMG - OpenMapGenerator - {% trans %}menu.showDescription{% endtrans %}{% endblock %}
+
+{% block body %}
+<link rel="stylesheet" href="/css/searchtabs.css" />
+<script src="/js/searchtabs.js"></script>
+
+<h1>{% trans %}menu.showDescription{% endtrans %}</h1>
+
+<tabs>
+  <tabsHeader>
+    <tab id="searchButton" onclick="tabClick(this.id)">{% trans %}search.tabList{% endtrans %}</tab>
+    <tab id="accessButton" onclick="tabClick(this.id)">{% trans %}search.tabId{% endtrans %}</tab>
+    <tab id="restrictedButton" onclick="tabClick(this.id)">{% trans %}search.tabRestricted{% endtrans %}</tab>
+    <tab>&nbsp;</tab>
+  </tabsHeader>
+  <tabsContent>
+    <tab id="searchTab">
+
+      <div class="formHDiv">
+        <form action="{{ path('map.tosearch') }}" method="post">
+          <p>
+            <label for="searchName">{% trans %}label.searchName{% endtrans %}</label>
+            <input type="text" id="searchName" name="searchName" value="{{ searchName }}" />
+            <button type="submit" class="button-primary">Go</button>
+          </p>
+        </form>
+      </div>
+
+      {% if maps.getTotalItemCount > 0 %}
+        {% if searchName %}<p>{% trans %}info.searchmapname{% endtrans %} <b>{{ searchName }}</b>.</p>{% endif %}
+        <p>{% trans with { '{count}': maps.getTotalItemCount} %}label.countFoundMaps{% endtrans %}</p>
+        <table class="fullwidth oddEven highlightRow">
+          <thead>
+            <tr>
+              <th>{% trans %}label.id{% endtrans %}</th>
+              <th>{% trans %}label.user{% endtrans %}</th>
+              <th>{% trans %}label.nameDescription{% endtrans %}</th>
+            </tr>
+          </thead>
+          <tbody>
+        {% for map in maps %}
+            <tr>
+              <td>{{ map.id }}</td>
+              <td>{{ map.user.getName }}</td>
+              <td>
+                <a href="{{ path('map.show.map', {'id': map.id}) }}#screenInitialPosition">{{ map.name }}</a>
+                <br />
+                {{ map.description }}
+              </td>
+            </tr>
+        {% endfor %}
+          </tbody>
+        </table>
+        <div class="navigation">{{ knp_pagination_render(maps) }}</div>
+      {% else %}
+        <p>{% trans %}label.noMapFound{% endtrans %}</p>
+      {% endif %}
+
+    </tab>
+    <tab id="accessTab">
+
+      <div class="formDiv">
+        <form action="{{ path('map.show.map.by.id') }}" method="post">
+            <label for="searchId">{% trans %}label.mapId{% endtrans %}</label>
+            <input type="text" id="searchId" name="searchId" />
+            <div class="formButtons">
+              <button type="submit" class="button-primary">{% trans %}button.showMap{% endtrans %}</button>
+            </div>
+        </form>
+      </div>
+
+    </tab>
+    <tab id="restrictedTab">
+
+      <div class="formDiv">
+        <form action="{{ path('map.show.map.restricted') }}" method="post">
+          <label for="mapid">{% trans %}label.mapId{% endtrans %}</label>
+          <input type="text" id="mapid" name="_mapid" />
+          <label for="mappassword">{% trans %}label.mapPassword{% endtrans %}</label>
+          <input type="password" id="mappassword" name="_mappassword" />
+          <div class="formButtons">
+            <button type="submit" class="button-primary">{% trans %}button.showMap{% endtrans %}</button>
+          </div>
+        </form>
+      </div>
+
+    </tab>
+  </tabsContent>
+</tabs>
+
+<script>
+tabClick('searchButton');
+</script>
+
+{% endblock %}

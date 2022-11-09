@@ -1,0 +1,16 @@
+var locations = [
+    {% for location in locations %}
+
+    {
+        code: {{ location.getId }},
+        map: {{ map.id }},
+        lat: {{ location.getLatitude }},
+        lng: {{ location.getLongitude }},
+        name: `{{ location.getName }}`,
+        description: `{{ location.getDescription }}`,
+        icon: `{{ location.getIcon }}`,
+        link: `{{ location.getLink }}`
+    },
+    {% endfor %}
+
+];

@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}OMG - OpenMapGenerator - Administration - Maps{% endblock %}
+
+{% block body %}
+<h1>Administration - Maps</h1>
+<style>MAIN { width: 100% !important; }</style>
+<table class="fullwidth oddEven highlightRow" style="font-size: 80%;">
+  <thead>
+    <tr>
+      <th class="withRightBorder">Id</th>
+      <th class="withRightBorder">User</th>
+      <th class="withRightBorder">Name</th>
+      <th class="withRightBorder">Description</th>
+      <th class="withRightBorder">Private</th>
+      <th class="withRightBorder">Password</th>
+      <th>Updated</th>
+    </tr>
+  </thead>
+  <tbody>
+{% for map in maps %}
+    <tr>
+      <td class="withRightBorder">{{ map.id }}</td>
+      <td class="withRightBorder"><a href="{{ path('admin.user', {'id': map.user.getId}) }}">{{ map.user.getName }}</a></td>
+      <td class="withRightBorder"><a href="{{ path('admin.map', {'id': map.id}) }}">{{ map.name }}</a></td>
+      <td class="withRightBorder">{{ map.description }}</td>
+      <td class="withRightBorder">{% if map.isPrivate %}X{% endif %}</td>
+      <td class="withRightBorder">{% if map.password != '' %}<span class="withPointer" title="{% trans %}button.showMapPassword{% endtrans %}" onclick="alert('{% trans with { '{map}': map.id, '{password}': map.password } %}info.showPassword{% endtrans %}')">&#128065;</span>{% endif %}</td>
+      <td class="nowrap">{% if map.updatedAt %}{{ map.updatedAt | date('Y-m-d H-i-s') }}{% endif %}</td>
+    </tr>
+{% endfor %}
+  </tbody>
+</table>
+<div class="navigation">{{ knp_pagination_render(maps) }}</div>
+
+{% endblock %}

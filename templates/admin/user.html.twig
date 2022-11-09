@@ -1,0 +1,61 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}OMG - OpenMapGenerator - Update user{% endblock %}
+
+{% block body %}
+
+<h1>Update user</h1>
+
+<div class="formDiv">
+
+  {{ form_start(form) }}
+
+    <div>
+        <label>Identifier</label>
+        <input type="text" value="{{user.id }}" readonly="readonly" />
+    </div>
+
+    {{ form_row(form.name) }}
+    {{ form_row(form.email) }}
+    <div>
+        <a href="mailto:{{ user.email }}?Subject=Message from OMG support">Send e-mail to user</a>
+    </div>
+    {{ form_row(form.language) }}
+    {{ form_row(form.roles) }}
+    {{ form_row(form.recoverkey) }}
+
+    <div class="formButtons">
+        {{ form_row(form.save) }}
+        {{ form_row(form.reset) }}
+    </div>
+
+  {{ form_end(form) }}
+</div>
+<h2>User maps</h2>
+<table class="fullwidth oddEven highlightRow" style="font-size: 80%;">
+    <thead>
+        <tr>
+          <th class="withRightBorder">Id</th>
+          <th class="withRightBorder">Name</th>
+          <th class="withRightBorder">Description</th>
+          <th class="withRightBorder">Private</th>
+          <th class="withRightBorder">Password</th>
+          <th>Updated</th>
+        </tr>
+    </thead>
+    <tbody>
+{% for map in user.maps %}
+        <tr>
+          <td class="withRightBorder">{{ map.id }}</td>
+          <td class="withRightBorder"><a href="{{ path('admin.map', {'id': map.id}) }}">{{ map.name }}</a></td>
+          <td class="withRightBorder">{{ map.description }}</td>
+          <td class="withRightBorder">{% if map.isPrivate %}X{% endif %}</td>
+          <td class="withRightBorder">{% if map.password != '' %}<span class="withPointer" title="{% trans %}button.showMapPassword{% endtrans %}" onclick="alert('{% trans with { '{map}': map.id, '{password}': map.password } %}info.showPassword{% endtrans %}')">&#128065;</span>{% endif %}</td>
+          <td class="nowrap">{% if map.updatedAt %}{{ map.updatedAt | date('Y-m-d H-i-s') }}{% endif %}</td>
+        </tr>
+{% endfor %}
+
+    </tbody>
+</table>
+
+{% endblock %}

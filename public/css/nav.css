@@ -1,0 +1,140 @@
+/*
+   Navigation pure CSS
+
+   Based on Ian Yates - Primary Navigation Base, thanks for this
+
+   https://webdesign.tutsplus.com/tutorials/building-a-responsive-layout-with-skeleton-navigation--webdesign-6385
+
+   Example:
+
+<div>
+    <nav class="primary">
+        <ul>
+            <li><a href="#" class="current">Menu 1</a></li>
+            <li>
+                <a href="#">Menu 2</a>
+                <ul>
+                    <li><a href="#">Submenu 1</a></li>
+                    <li><a href="#">Submenu 2</a></li>
+                    <li><a href="#">Submenu 3</a></li>
+                </ul>
+            </li>
+            <li class="right"><a href="#" class="disabled">Menu 3</a></li>
+        </ul>
+    </nav>
+</div>
+
+ */
+
+:root {
+
+    --navFontSize: 19px;
+    --navFontSizeMini: 12px;
+
+    --navPrimaryHeight: 50px;
+    --navPrimaryPadding: 0 19px;
+    --navPrimaryPaddingMini: 0 7px;
+
+    --navSubmenuHeight: 35px;
+    --navSubmenuBorderTop: 1px solid #303030;
+
+    --navColor: #ffffff;
+    --navBackground: #303030;
+
+    --navHoverBackground: #505050;
+
+    --navCurrentColor: #fcff00;
+    --navCurrentBackground: default;
+
+    --navDisabledColor: #808080;
+    --navDisabledBackground: default;
+}
+
+/* Main menu */
+
+MENU {
+    text-align: left;
+    font-size: var(--navFontSize);
+}
+NAV {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: var(--navBackground);
+}
+NAV UL, NAV UL LI {
+    margin: 0;
+    padding: 0;
+}
+NAV UL LI {
+    display: inline;
+    position: relative;
+    float: left;
+}
+NAV UL LI A, NAV UL LI A:visited {
+    display: inline-block;
+    padding: var(--navPrimaryPadding);
+    line-height: var(--navPrimaryHeight);
+    color: var(--navColor);
+    font-variant: small-caps;
+    cursor: pointer;
+    text-decoration: none;
+}
+NAV UL LI A.current {
+    color: var(--navCurrentColor);
+    background-color: var(--navCurrentBackground);
+    font-weight: bold;
+}
+NAV UL LI A.disabled {
+    color: var(--navDisabledColor);
+    background-color: var(--navDisabledBackground);
+    cursor: not-allowed;
+}
+NAV UL LI A:hover {
+    color: var(--navColor);
+    background-color: var(--navHoverBackground);
+}
+NAV UL LI A.current:hover {
+    color: var(--navCurrentColor);
+    background-color: var(--navHoverBackground);
+}
+NAV UL LI A.disabled:hover {
+    color: var(--navDisabledColor);
+    background-color: var(--navDisabledBackground);
+}
+
+/* Secondary menu */
+
+NAV UL UL {
+    position: absolute;
+    z-index: 9999;
+    background-color: var(--navBackground);
+
+    height: 0;
+    overflow: hidden;
+}
+NAV UL LI:hover UL {
+    height: auto;
+    overflow: auto;
+}
+NAV UL UL LI {
+    float: none;
+}
+NAV UL UL LI A {
+    display: block;
+    line-height: var(--navSubmenuHeight);
+    border-top: var(--navSubmenuBorderTop);
+    white-space: nowrap;
+}
+
+@media only screen and (max-width: 499px) {
+
+    MENU {
+        font-size: var(--navFontSizeMini);
+    }
+
+    NAV UL LI A, NAV UL LI A:visited {
+        padding: var(--navPrimaryPaddingMini);
+    }
+}

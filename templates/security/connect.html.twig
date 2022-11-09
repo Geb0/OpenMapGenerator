@@ -1,0 +1,30 @@
+{% extends "base.html.twig" %}
+
+{% block title %}OMG - OpenMapGenerator - {% trans %}menu.connectDescription{% endtrans %}{% endblock %}
+
+{% block body %}
+
+<h1>{% trans %}menu.connectDescription{% endtrans %}</h1>
+
+{% if error %}
+
+<div class="error">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+
+{% endif %}
+
+<div class="formDiv">
+    <form action="{{ path('security.connect') }}" method="post">
+        <label for="username">{% trans %}label.email{% endtrans %}</label>
+        <input type="email" id="username" name="_username" value="{{ last_username }}" />
+        <label for="password">{% trans %}label.password{% endtrans %}</label>
+        <input type="password" id="password" name="_password" />
+        <div class="formButtons">
+            <div><button type="submit" class="button-primary">{% trans %}button.connect{% endtrans %}</button></div>
+            <p>&nbsp;</p>
+            <div><a href="{{ path('security.registration') }}" class="button-info">{% trans %}button.createAccount{% endtrans %}</a></div>
+            <div><a href="{{ path('security.lostpassword') }}" class="button-alert">{% trans %}button.lostPassword{% endtrans %}</a></div>
+        </div>
+    </form>
+</div>
+
+{% endblock %}

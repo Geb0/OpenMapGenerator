@@ -1,0 +1,215 @@
+<p><a href="{{ path('help.license') }}">Licence d'OpenMapGenerator</a></p>
+<p><a href="{{ path('help.tou') }}">Conditions Générales d'Utilisation</a></p>
+
+<h2>Table des matières</h2>
+
+<tableOfContent>
+    <a href="#manageAccount" class="tableOfContent2">Gestion du compte utilisateur</a><br />
+    <a href="#createAccount" class="tableOfContent3">Création d'un compte</a><br />
+    <a href="#connectAccount" class="tableOfContent3">Connexion à votre compte</a><br />
+    <a href="#changeLanguage" class="tableOfContent3">Changer de langue</a><br />
+    <a href="#changePassword" class="tableOfContent3">Changer de mot de passe</a><br />
+    <a href="#lostPassword" class="tableOfContent3">Mot de passe perdu</a><br />
+    <a href="#accountDisconnect" class="tableOfContent3">Déconnexion de votre compte</a><br />
+    <a href="#manageMap" class="tableOfContent2">Gestion des cartes</a><br />
+    <a href="#createMap" class="tableOfContent3">Création d'une nouvelle carte</a><br />
+    <a href="#updateMap" class="tableOfContent3">Modification d'une carte</a><br />
+    <a href="#addMarker" class="tableOfContent4">Ajout d'une position</a><br />
+    <a href="#updateMarker" class="tableOfContent4">Modification d'une position</a><br />
+    <a href="#deleteMarker" class="tableOfContent4">Suppression d'une position</a><br />
+    <a href="#showMap" class="tableOfContent2">Consultation des cartes</a><br />
+    <a href="#showPublicMap" class="tableOfContent3">Cartes publiques</a><br />
+    <a href="#showPrivateMap" class="tableOfContent3">Cartes privées</a><br />
+    <a href="#showRestrictedMap" class="tableOfContent3">Cartes avec accès restreint</a><br />
+</tableOfContent>
+
+<h2 id="manageAccount">Gestion du compte utilisateur</h2>
+
+<h3 id="createAccount">Création d'un compte</h3>
+
+<p>Pour créer un compte&nbsp;:</p>
+<p>
+    <ul>
+        <li>Cliquer dans le menu sur <b>{% trans %}menu.connectName{% endtrans %}</b>.</li>
+        <li>Cliquer sur le lien <b>{% trans %}menu.newDescription{% endtrans %}</b>.</li>
+        <li>Entrer votre nom d'utilisateur dans la zone <b>{% trans %}label.name{% endtrans %}</b>. Cette zone est obligatoire.</li>
+        <li>Entrer votre adresse e-mail dans la zone <b>{% trans %}label.email{% endtrans %}</b>. Cette zone est obligatoire.</li>
+        <li>Entrer un mot de passe pour votre compte dans la zone <b>{% trans %}label.password{% endtrans %}</b>. Cette zone est obligatoire et doit contenir au minimum 8 lettres ou chiffres.</li>
+        <li>Cliquer sur le bouton <b>{% trans %}button.createAccount{% endtrans %}</b>.</li>
+    </ul>
+</p>
+
+<h3 id="connectAccount">Connexion à votre compte</h3>
+
+<p>Pour vous connecter à votre compte&nbsp;:
+    <ul>
+        <li>Cliquer dans le menu sur <b>{% trans %}menu.connectName{% endtrans %}</b>.</li>
+        <li>Entrez votre adresse e-mail et votre mot de passe.</li>
+        <li>Cliquer sur le bouton <b>{% trans %}button.connect{% endtrans %}</b>.</li>
+    </ul>
+</p>
+
+<h3 id="changeLanguage">Changer de langue</h3>
+
+<p>Pour changer de façon permanente la langue de votre compte&nbsp;:
+    <ul>
+        <li>Connectez-vous à votre compte si vous n'êtes pas déjà connecté.</li>
+        <li>Cliquer dans le menu sur <b>Votre nom</b>.</li>
+        <li>Choisir la langue souhaitée dans <b>{% trans %}label.language{% endtrans %}</b>.</li>
+        <li>Cliquer sur le bouton <b>{% trans %}button.update{% endtrans %}</b>.</li>
+    </ul>
+</p>
+
+<h3 id="changePassword">Changer de mot de passe</h3>
+
+<p>Pour changer le mot de passe de votre compte&nbsp;:
+    <ul>
+        <li>Connectez-vous à votre compte si vous n'êtes pas déjà connecté.</li>
+        <li>Cliquer dans le menu sur <b>Votre nom</b>.</li>
+        <li>Cliquer sur le bouton <b>{% trans %}button.changePassword{% endtrans %}</b>.</li>
+        <li>Entrer votre mot de passe actuel dans la zone <b>{% trans %}label.actualPassword{% endtrans %}</b>.</li>
+        <li>Entrer un nouveau mot de passe dans la zone <b>{% trans %}label.newPassword{% endtrans %}</b>.</li>
+        <li>Entrer à nouveau le nouveau mot de passe dans la zone <b>{% trans %}label.confirmPassword{% endtrans %}</b>.</li>
+        <li>Cliquer sur le bouton <b>{% trans %}button.changePassword{% endtrans %}</b>.</li>
+    </ul>
+</p>
+
+<h3 id="lostPassword">Mot de passe perdu</h3>
+
+<p>Si vous avez perdu votre mot de passe&nbsp;:
+    <ul>
+        <li>Cliquer dans le menu sur <b>{% trans %}menu.connectName{% endtrans %}</b>.</li>
+        <li>Cliquer sur le lien <b>{% trans %}button.lostPassword{% endtrans %}</b>.</li>
+        <li>Entrez votre adresse e-mail dans la zone <b>{% trans %}label.email{% endtrans %}</b>.</li>
+        <li>Cliquer sur le bouton <b>{% trans %}button.getNewPassword{% endtrans %}</b>.</li>
+        <li>Un e-mail vous sera envoyé avec un nouveau mot de passe.</li>
+    </ul>
+</p>
+
+<h3 id="accountDisconnect">Déconnexion de votre compte</h3>
+
+<p>Pour vous déconnecter de votre compte lorsque vous êtes connecté&nbsp;:
+    <ul>
+        <li>Cliquer sur le bouton <span class="logoutButton"><b>&#x23FB;</b></span> dans le menu.</li>
+    </ul>
+</p>
+
+<h2 id="manageMap">Gestion des cartes</h2>
+
+<p>Pour gérer les cartes de votre compte&nbsp;:
+    <ul>
+        <li>Cliquer dans le menu sur le bouton <b>{% trans %}menu.manageName{% endtrans %}</b>.</li>
+        <li>La liste des cartes de votre compte est alors affichée.</li>
+        <li>Vous pouvez alors créer, modifier ou supprimer les cartes...</li>
+    </ul>
+</p>
+
+<h3 id="createMap">Création d'une nouvelle carte</h3>
+
+<p>Pour créer une nouvelle carte&nbsp;:
+    <ul>
+        <li>Cliquer sur le lien <b>{% trans %}menu.createDescription{% endtrans %}</b> en dessous de la liste.</li>
+        <li>Entrer un nom pour la carte dans la zone <b>{% trans %}label.name{% endtrans %}</b>. Cette zone est obligatoire.</li>
+        <li>Entrer une description pour la carte dans la zone <b>{% trans %}label.description{% endtrans %}</b>. Cette zone est facultative.</li>
+        <li>Cocher la case <b>{% trans %}label.private{% endtrans %}</b> pour que cette carte ne soit visible que par vous une fois connecté.</li>
+        <li>Entrer un mot de passe pour la carte dans la zone <b>{% trans %}label.password{% endtrans %}</b> seulement si vous voulez que la carte ne soit visible que par certaines personnes. Vous devrez transmettre ce mot de passe ainsi que l'identifiant de la carte à ces personnes. <span class="error"><b>Attention&nbsp;! Ne pas donner ici le mot de passe de votre compte</b>.</span></li>
+        <li>Cliquer sur le bouton <b>{% trans %}button.createMap{% endtrans %}</b>.</li>
+        <li>La page <b>{% trans %}menu.updateDescription{% endtrans %}</b> s'affiche alors avec la nouvelle carte.</li>
+    </ul>
+</p>
+
+<h3 id="updateMap">Modification d'une carte</h3>
+
+<p>Pour modifier une carte&nbsp;:
+<ul>
+    <li>Cliquer sur le lien <b>{% trans %}button.update{% endtrans %}</b> à droite de la carte choisie.</li>
+    <li>La page <b>{% trans %}menu.updateDescription{% endtrans %}</b> s'affiche alors.</li>
+    <li>Modifier les zones en haut de la page puis cliquer sur le bouton <b>{% trans %}button.update{% endtrans %}</b>.</li>
+    <li>Centrer et zommer la carte dans la zone à gérer puis cliquer sur le bouton <b>{% trans %}button.updateMapCoordinates{% endtrans %}</b> pour modifier la vue par défaut de la carte.</li>
+</ul>
+</p>
+
+<h4 id="addMarker">Ajout d'une position</h4>
+
+<p>Pour ajouter une position sur la carte&nbsp;:
+    <ul>
+        <li>Cliquer à l'endroit souhaité sur la carte..</li>
+        <li>Une fenêtre s'affiche avec les paramètres de la position.</li>
+        <li>Entrer un nom pour la position dans la zone <b>{% trans %}label.name{% endtrans %}</b>. Cette zone est obligatoire.</li>
+        <li>Entrer une description pour la position dans la zone <b>{% trans %}label.description{% endtrans %}</b>. Cette zone est facultative.</li>
+        <li>Entrer un lien vers la page d'un site web (https://...) dans la zone <b>{% trans %}label.link{% endtrans %}</b>. Cette zone est facultative.</li>
+        <li>Choisir une icône pour la position dans la liste <b>{% trans %}label.icon{% endtrans %}</b>.</li>
+        <li>Cliquer sur le bouton <b>{% trans %}button.add{% endtrans %}</b>.</li>
+        <li>La nouvelle position est ajoutée sur la carte.</li>
+    </ul>
+</p>
+
+<h4 id="updateMarker">Modification d'une position</h4>
+
+<p>Pour modifier une position sur la carte&nbsp;:
+    <ul>
+        <li>Cliquer sur la position à modifier sur la carte.</li>
+        <li>Une fenêtre s'affiche avec les paramètres de la position.</li>
+        <li>Modifier le nom de la position dans la zone <b>{% trans %}label.name{% endtrans %}</b>. Cette zone est obligatoire.</li>
+        <li>Modifier la description de la position dans la zone <b>{% trans %}label.description{% endtrans %}</b>. Cette zone est facultative.</li>
+        <li>Modifier le lien vers la page d'un site web (https://...) dans la zone <b>{% trans %}label.link{% endtrans %}</b>. Cette zone est facultative.</li>
+        <li>Choisir une autre icône pour la position dans la liste <b>{% trans %}label.icon{% endtrans %}</b>.</li>
+        <li>Cliquer sur le bouton <b>{% trans %}button.update{% endtrans %}</b>.</li>
+        <li>La position est alors modifiée sur la carte.</li>
+    </ul>
+</p>
+
+<h4 id="deleteMarker">Suppression d'une position</h4>
+
+<p>Pour supprimer une position sur la carte&nbsp;:
+    <ul>
+        <li>Cliquer sur la position à supprimer sur la carte.</li>
+        <li>Une fenêtre s'affiche avec les paramètres de la position.</li>
+        <li>Cliquer sur le bouton <b>{% trans %}button.remove{% endtrans %}</b>.</li>
+        <li>La position est alors supprimée de la carte.</li>
+    </ul>
+</p>
+
+<h2 id="showMap">Consultation des cartes</h2>
+
+<h3 id="showPublicMap">Cartes publiques</h3>
+
+<p>Pour consulter des cartes publiques&nbsp;:
+    <ul>
+        <li>Cliquer dans le menu sur <b>{% trans %}menu.showName{% endtrans %}</b>.</li>
+        <li>La liste des cartes publiques est affichée.</li>
+        <li>Cliquer sur le nom d'une carte pour la consulter.</li>
+    </ul>
+</p>
+
+<h3 id="showPrivateMap">Cartes privées</h3>
+
+<p>Pour consulter des cartes privées&nbsp;:
+    <ul>
+        <li>Cliquer dans le menu sur <b>{% trans %}menu.showName{% endtrans %}</b>.</li>
+        <li>La liste des cartes publiques est affichée.</li>
+        <li>Si vous êtes connecté, vos cartes privées et restreintes sont aussi affichées.</li>
+        <li>Cliquer sur le nom d'une carte pour la consulter.</li>
+    </ul>
+</p>
+
+<h3 id="showRestrictedMap">Cartes avec accès restreint</h3>
+
+<p>Pour consulter des cartes avec accès restreint&nbsp;:
+    <ul>
+        <li>Cliquer dans le menu sur <b>{% trans %}menu.showName{% endtrans %}</b>.</li>
+        <li>Sous la liste, dans la partie <b>{% trans %}subtitle.accessRestrictedMap{% endtrans %}</b>&nbsp;:
+            <ul>
+                <li>Entrer l'identifiant de la carte dans la zone <b>{% trans %}label.mapId{% endtrans %}</b>.</li>
+                <li>Entrer le mot de passe de la carte dans la zone <b>{% trans %}label.mapPassword{% endtrans %}</b>.</li>
+                <li>Cliquer sur le bouton <b>{% trans %}button.showMap{% endtrans %}</b>.</li>
+                <li>Essayer avec&nbsp;:
+                    <ul>
+                        <li>Identifiant&nbsp;: 2</li>
+                        <li>Mot de passe&nbsp;: pass</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</p>

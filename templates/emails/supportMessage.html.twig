@@ -1,0 +1,10 @@
+<p>Support message</p>
+<p>From: {% if userId %}#{{ userId }} {% endif %}{{ userName }} {{ userEmail }}</p>
+<p>At: {{ messageDate | date('Y-m-d H-i-s') }}</p>
+<p>Subject: {{ messageSubject }}</p>
+<hr />
+<p>
+{% for line in messageContent %}
+    {{ line }}<br />
+{% endfor %}
+</p>

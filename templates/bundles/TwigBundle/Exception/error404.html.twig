@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+{% include 'head.html.twig' %}
+<title>{% block title %}OMG - OpenMapGenerator - 404 Page not found{% endblock %}</title>
+</head>
+<body>
+{% include 'notification.html.twig' %}
+<main>
+<sitename>
+<div id="fullsitename"><img src="/logo.png" /> OMG - OpenMapGenerator - v1.1</div>
+<div id="minisitename"><img src="/logo.png" /> OMG - v1.1</div>
+</sitename>
+{% include 'menu.html.twig' %}
+<content class="center">
+{% block body %}
+<div class="center" style="display: inline-block; margin: 0 auto; width: 500px; max-width: 100%;">
+<h1>404 Page not found</h1>
+<h2>The page you're requesting does not exist or has been moved.</h2>
+<p><img src="/images/404.png" class="errorPicture" /></p>
+</div>
+{% endblock %}
+</content>
+</main>
+</body>
+</html>

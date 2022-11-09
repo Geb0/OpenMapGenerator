@@ -1,0 +1,59 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}OMG - OpenMapGenerator - Update user map{% endblock %}
+
+{% block body %}
+
+<h1>Update user map</h1>
+
+<div class="formDiv">
+
+  {{ form_start(form) }}
+
+    <div>
+        <label>Identifier</label>
+        <input type="text" value="{{map.id }}" readonly="readonly" />
+    </div>
+
+    {{ form_row(form.name) }}
+    {{ form_row(form.description) }}
+    {{ form_row(form.private) }}
+    {{ form_row(form.password) }}
+
+    <div class="formButtons">
+        {{ form_row(form.save) }}
+        {{ form_row(form.reset) }}
+    </div>
+
+  {{ form_end(form) }}
+</div>
+<h2>Map locations</h2>
+<table class="fullwidth oddEven highlightRow" style="font-size: 80%;">
+    <thead>
+        <tr>
+          <th class="withRightBorder">Id</th>
+          <th class="withRightBorder">Name</th>
+          <th class="withRightBorder">Description</th>
+          <th class="withRightBorder">Latitude</th>
+          <th class="withRightBorder">Longitude</th>
+          <th class="withRightBorder">Icon</th>
+          <th>Link</th>
+        </tr>
+    </thead>
+    <tbody>
+{% for location in map.locations %}
+        <tr>
+          <td class="withRightBorder">{{ location.id }}</td>
+          <td class="withRightBorder"><a href="{{ path('admin.location', {'id': location.id}) }}">{{ location.name }}</a></td>
+          <td class="withRightBorder">{{ location.description }}</td>
+          <td class="withRightBorder" class="right">{{ location.latitude }}</td>
+          <td class="withRightBorder" class="right">{{ location.longitude }}</td>
+          <td class="withRightBorder">{{ location.icon }}</td>
+          <td><a href="{{ location.link }}" target="_blank">{{ location.link }}</a></td>
+        </tr>
+{% endfor %}
+
+    </tbody>
+</table>
+
+{% endblock %}

@@ -1,0 +1,216 @@
+<p><a href="{{ path('help.license') }}">OpenMapGenerator License</a></p>
+<p><a href="{{ path('help.tou') }}">General Terms of Use</a></p>
+
+<h2>Table of content</h2>
+
+<tableOfContent>
+    <a href="#manageAccount" class="tableOfContent2">User account management</a><br />
+    <a href="#createAccount" class="tableOfContent3">Creating an account</a><br />
+    <a href="#connectAccount" class="tableOfContent3">Logging in to your account</a><br />
+    <a href="#changeLanguage" class="tableOfContent3">Changing your language</a><br />
+    <a href="#changePassword" class="tableOfContent3">Changing your password</a><br />
+    <a href="#lostPassword" class="tableOfContent3">Lost password</a><br />
+    <a href="#accountDisconnect" class="tableOfContent3">Logging out of your account</a><br />
+    <a href="#manageMap" class="tableOfContent2">Map management</a><br />
+    <a href="#createMap" class="tableOfContent3">Creating a new map</a><br />
+    <a href="#updateMap" class="tableOfContent3">Updating a map</a><br />
+    <a href="#addMarker" class="tableOfContent4">Adding a new marker</a><br />
+    <a href="#updateMarker" class="tableOfContent4">Updating a marker</a><br />
+    <a href="#deleteMarker" class="tableOfContent4">Removing a marker</a><br />
+    <a href="#showMap" class="tableOfContent2">Viewing maps</a><br />
+    <a href="#showPublicMap" class="tableOfContent3">Public maps</a><br />
+    <a href="#showPrivateMap" class="tableOfContent3">Private maps</a><br />
+    <a href="#showRestrictedMap" class="tableOfContent3">Maps with restricted access</a><br />
+</tableOfContent>
+
+<h2 id="manageAccount">User account management</h2>
+
+<h3 id="createAccount">Creating an account</h3>
+
+<p>To create an account&nbsp;:</p>
+<p>
+    <ul>
+        <li>Click on <b>{% trans %}menu.connectName{% endtrans %}</b> in the menu.</li>
+        <li>Click on the <b>{% trans %}menu.newDescription{% endtrans %}</b> link.</li>
+        <li>Enter your user name in the <b>{% trans %}label.name{% endtrans %}</b> field. This field is mandatory.</li>
+        <li>Enter your e-mail address in the <b>{% trans %}label.email{% endtrans %}</b> field. This field is mandatory.</li>
+        <li>Enter a password for your account in the <b>{% trans %}label.password{% endtrans %}</b> field. This field is mandatory and must contain at least 8 letters or numbers.</li>
+        <li>Click on the <b>{% trans %}button.createAccount{% endtrans %}</b> button.</li>
+    </ul>
+</p>
+
+<h3 id="connectAccount">Logging in to your account</h3>
+
+<p>To log in to your account&nbsp;:
+    <ul>
+        <li>Click on <b>{% trans %}menu.connectName{% endtrans %}</b> in the menu.</li>
+        <li>Enter your e-mail and password.</li>
+        <li>Click on the <b>{% trans %}button.connect{% endtrans %}</b> button.</li>
+    </ul>
+</p>
+
+<h3 id="changeLanguage">Changing your language</h3>
+
+<p>To permanently change the language of your account&nbsp;:
+    <ul>
+        <li>Log in to your account if you are not connected yet.</li>
+        <li>Click on <b>Your Name</b> in the menu.</li>
+        <li>Select the desired language from the <b>{% trans %}label.language{% endtrans %}</b> list.</li>
+        <li>Click on the <b>{% trans %}button.update{% endtrans %}</b> button.</li>
+    </ul>
+</p>
+
+<h3 id="changePassword">Changing your password</h3>
+
+<p>To change your account password&nbsp;:
+    <ul>
+        <li>Log in to your account if you are not connected yet.</li>
+        <li>Click on <b>Your Name</b> in the menu.</li>
+        <li>Click on the <b>{% trans %}button.changePassword{% endtrans %}</b> button.</li>
+        <li>Enter your current password in the <b>{% trans %}label.actualPassword{% endtrans %}</b> field.</li>
+        <li>Enter a new password in the <b>{% trans %}label.newPassword{% endtrans %}</b> field.</li>
+        <li>Re-enter the new password in the <b>{% trans %}label.confirmPassword{% endtrans %}</b> field.</li>
+        <li>Click on the <b>{% trans %}button.changePassword{% endtrans %}</b> button.</li>
+    </ul>
+</p>
+
+<h3 id="lostPassword">Lost password</h3>
+
+<p>If you have lost your password&nbsp;:
+    <ul>
+        <li>Click on <b>{% trans %}menu.connectName{% endtrans %}</b> in the menu.</li>
+        <li>Click on the <b>{% trans %}button.lostPassword{% endtrans %}</b> link.</li>
+        <li>Enter your e-mail address in the <b>{% trans %}label.email{% endtrans %}</b> field.</li>
+        <li>Click on the <b>{% trans %}button.getNewPassword{% endtrans %}</b> button.</li>
+        <li>An e-mail will be sent to you with a new password.</li>
+    </ul>
+</p>
+
+<h3 id="accountDisconnect">Logging out of your account</h3>
+
+<p>To log out of your account while you are logged in&nbsp;:
+    <ul>
+        <li>Click on the <span class="logoutButton"><b>&#x23FB;</b></span> button in the menu.</li>
+    </ul>
+</p>
+
+<h2 id="manageMap">Map management</h2>
+
+<p>To manage your maps&nbsp;:
+    <ul>
+        <li>Click on <b>{% trans %}menu.manageName{% endtrans %}</b> in the menu.</li>
+        <li>The list of cards in your account will be displayed.</li>
+        <li>You can then create, modify or delete maps...</li>
+    </ul>
+</p>
+
+<h3 id="createMap">Creating a new map</h3>
+
+<p>To create a new map&nbsp;:
+    <ul>
+        <li>Click on the <b>{% trans %}menu.createDescription{% endtrans %}</b> link below the list.</li>
+        <li>Enter a name for the map in the <b>{% trans %}label.name{% endtrans %}</b> field. This field is mandatory.</li>
+        <li>Enter a description for the map in the <b>{% trans %}label.description{% endtrans %}</b> field. This field is optional.</li>
+        <li>Check the <b>{% trans %}label.private{% endtrans %}</b> box to make this map visible only to you once you are logged in.</li>
+        <li>Enter a password for the map in the <b>{% trans %}label.password{% endtrans %}</b> field only if you want the card to be visible only to certain people. You will need to pass this password along with the card ID to these people. <span class="error"><b>Please note&nbsp;! Do not enter your account password here.</b></span></li>
+        <li>Click on the <b>{% trans %}button.createMap{% endtrans %}</b> button.</li>
+        <li>The <b>{% trans %}menu.updateDescription{% endtrans %}</b> page will be displayed with the new map.</li>
+    </ul>
+</p>
+
+<h3 id="updateMap">Updating a map</h3>
+
+<p>To update a map&nbsp;:
+    <ul>
+        <li>Click on the <b>{% trans %}button.update{% endtrans %}</b> link to the right of the card chosen from the list on the <b>Manage</b> screen.</li>
+        <li>The <b>{% trans %}menu.updateDescription{% endtrans %}</b> page is then displayed.</li>
+        <li>Modify the zones at the top of the page and then click on the <b>{% trans %}button.update{% endtrans %}</b> button.</li>
+        <li>Center and zoom the map in the area to be managed then click on the <b>{% trans %}button.updateMapCoordinates{% endtrans %}</b> button to change the default view of the map.</li>
+    </ul>
+</p>
+
+<h4 id="addMarker">Adding a new marker</h4>
+
+<p>To add a position on the map&nbsp;:
+    <ul>
+        <li>Click at the desired position on the map.</li>
+        <li>A window appears with the parameters of the position.</li>
+        <li>Enter a name for the position in the <b>{% trans %}label.name{% endtrans %}</b> field. This field is mandatory.</li>
+        <li>Enter a description for the position in the <b>{% trans %}label.description{% endtrans %}</b> field. This field is optional.</li>
+        <li>Enter a link to a web site page (https://...) in the <b>{% trans %}label.link{% endtrans %}</b> field. This field is optional.</li>
+        <li>Choose an icon for the position in the <b>{% trans %}label.icon{% endtrans %}</b> list.</li>
+        <li>Click on the <b>{% trans %}button.add{% endtrans %}</b> button.</li>
+        <li>The new position is added on the map.</li>
+    </ul>
+</p>
+
+<h4 id="updateMarker">Updating a marker</h4>
+
+<p>To update a position on the map&nbsp;:
+    <ul>
+        <li>Click on the position you want to edit on the map.</li>
+        <li>A window appears with the parameters of the position.</li>
+        <li>Change the name of the position in the <b>{% trans %}label.name{% endtrans %}</b> field. This field is mandatory.</li>
+        <li>Change the description of the position in the <b>{% trans %}label.description{% endtrans %}</b> field. This field is optional.</li>
+        <li>Change the link of the position in the <b>{% trans %}label.link{% endtrans %}</b> field. This field is optional.</li>
+        <li>Choose another icon for the position in the <b>{% trans %}label.icon{% endtrans %}</b> list.</li>
+        <li>Click on the <b>{% trans %}button.update{% endtrans %}</b> button.</li>
+        <li>The position is updated on the map.</li>
+    </ul>
+</p>
+
+<h4 id="deleteMarker">Removing a marker</h4>
+
+<p>To remove a position from the map&nbsp;:
+    <ul>
+        <li>Click on the position on the map that you want to remove.</li>
+        <li>A window appears with the parameters of the position.</li>
+        <li>Click on the <b>{% trans %}button.remove{% endtrans %}</b> button.</li>
+        <li>The position is then removed from the map.</li>
+    </ul>
+</p>
+
+<h2 id="showMap">Viewing maps</h2>
+
+<h3 id="showPublicMap">Public maps</h3>
+
+<p>To view public maps&nbsp;:
+    <ul>
+        <li>Click on <b>{% trans %}menu.showName{% endtrans %}</b> in the menu.</li>
+        <li>The list of public maps is displayed.</li>
+        <li>Click on the name of a map to view it.</li>
+    </ul>
+</p>
+
+<h3 id="showPrivateMap">Private maps</h3>
+
+<p>To view private maps&nbsp;:
+    <ul>
+        <li>Click on <b>{% trans %}menu.showName{% endtrans %}</b> in the menu.</li>
+        <li>The list of public maps is displayed.</li>
+        <li>If you are logged in, your private and restricted maps are also displayed.</li>
+        <li>Click on the name of a map to view it.</li>
+    </ul>
+</p>
+
+<h3 id="showRestrictedMap">Maps with restricted access</h3>
+
+<p>To view restricted maps&nbsp;:
+    <ul>
+        <li>Click on <b>{% trans %}menu.showName{% endtrans %}</b> in the menu.</li>
+        <li>The list of public maps is displayed.</li>
+        <li>Under the list, in the <b>{% trans %}subtitle.accessRestrictedMap{% endtrans %}</b> section&nbsp;:
+            <ul>
+                <li>Enter the card's ID in the <b>{% trans %}label.mapId{% endtrans %}</b> field.</li>
+                <li>Enter the password for the card in the <b>{% trans %}label.mapPassword{% endtrans %}</b> field.</li>
+                <li>Click on the <b>{% trans %}button.showMap{% endtrans %}</b> button.</li>
+                <li>Try with&nbsp;:
+                    <ul>
+                        <li>Identifier&nbsp;: 2</li>
+                        <li>Password&nbsp;: pass</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</p>

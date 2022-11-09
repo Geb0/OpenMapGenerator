@@ -1,0 +1,69 @@
+<menu>
+    <nav>
+        <ul>
+            <li>
+                <a
+                    href="{{ path('home.index') }}"
+                    title="{% trans %}menu.homeDescription{% endtrans %}"
+                    {% if currentMenu is defined and currentMenu == 'home' %}class="current"{% endif %}
+                >{% trans %}menu.homeName{% endtrans %}</a>
+            </li>
+            <li>
+                <a
+                    href="{{ path('map.show') }}"
+                    title="{% trans %}menu.showDescription{% endtrans %}"
+                    {% if currentMenu is defined and currentMenu == 'show' %}class="current"{% endif %}
+                >{% trans %}menu.showName{% endtrans %}</a>
+            </li>
+{% if app.user %}
+            <li>
+                <a
+                    href="{{ path('map.manage') }}"
+                    title="{% trans %}menu.manageDescription{% endtrans %}"
+                    {% if currentMenu is defined and currentMenu == 'manage' %}class="current"{% endif %}
+                >{% trans %}menu.manageName{% endtrans %}</a>
+            </li>
+{% endif %}
+            <li>
+                <a
+                    href="{{ path('help.index') }}"
+                    title="{% trans %}menu.helpDescription{% endtrans %}"
+                    {% if currentMenu is defined and currentMenu == 'help' %}class="current"{% endif %}
+                >{% trans %}menu.helpName{% endtrans %}</a>
+            </li>
+{% if is_granted('ROLE_ADMIN') %}
+            <li>
+                <a
+                    href="{{ path('admin.index') }}"
+                    title="Administration"
+                    {% if currentMenu is defined and currentMenu == 'admin' %}class="current"{% endif %}
+                >Admin</a>
+            </li>
+{% endif %}
+{% if app.user %}
+            <li class="floatright">
+                <a
+                    href="{{ path('security.disconnect') }}"
+                    title="{% trans with {'{user}': app.user.name} %}menu.disconnectDescription{% endtrans %}"
+                    class="logoutButton"
+                >&#x23FB;</a>
+            </li>
+            <li class="floatright">
+                <a
+                    href="{{ path('user.update', {'id': app.user.id}) }}"
+                    title="{% trans %}menu.accountDescription{% endtrans %}"
+                    {% if currentMenu is defined and currentMenu == 'user' %}class="current"{% endif %}
+                >{{ app.user.name }}</a>
+            </li>
+{% else %}
+            <li class="floatright">
+                <a
+                    href="{{ path('security.connect') }}"
+                    title="{% trans %}menu.connectDescription{% endtrans %}"
+                    {% if currentMenu is defined and currentMenu == 'connect' %}class="current"{% endif %}
+                >{% trans %}menu.connectName{% endtrans %}</a>
+            </li>
+{% endif %}
+        </ul>
+    </nav>
+</menu>

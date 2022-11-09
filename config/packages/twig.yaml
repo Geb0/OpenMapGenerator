@@ -1,0 +1,13 @@
+twig:
+    default_path: '%kernel.project_dir%/templates'
+    globals:
+        locales: '%app.locales%'
+        defaultLocale: '%app.defaultLocale%'
+        enablelog: '%app.enableLog%'
+        iconsDir: '%app.iconsDir%'
+        defaultIcon: '%app.defaultIcon%'
+        editorName: '%app.editorName%'
+
+when@test:
+    twig:
+        strict_variables: true

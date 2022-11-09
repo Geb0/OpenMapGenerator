@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+{% include 'head.html.twig' %}
+<title>{% block title %}OMG - OpenMapGenerator - 403 Forbidden access{% endblock %}</title>
+</head>
+<body>
+{% include 'notification.html.twig' %}
+<main>
+<sitename>
+<div id="fullsitename"><img src="/logo.png" /> OMG - OpenMapGenerator - v1.1</div>
+<div id="minisitename"><img src="/logo.png" /> OMG - v1.1</div>
+</sitename>
+{% include 'menu.html.twig' %}
+<content class="center">
+{% block body %}
+<div class="center" style="display: inline-block; margin: 0 auto; width: 500px; max-width: 100%;">
+<h1>403 Forbidden access</h1>
+<h2>You don't have permission to access this page.</h2>
+<p><img src="/images/403.png" class="errorPicture" /></p>
+</div>
+{% endblock %}
+</content>
+</main>
+</body>
+</html>

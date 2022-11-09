@@ -1,0 +1,129 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}OMG - OpenMapGenerator - {% trans %}menu.updateDescription{% endtrans %}{% endblock %}
+
+{% block body %}
+
+<h1>{% trans %}menu.updateDescription{% endtrans %}</h1>
+
+<div class="formDiv">
+<form id="formMap">
+    <label for="mapId">{% trans %}label.mapId{% endtrans %}</label>
+    <input type="text" id="mapId" name="mapId" value="{{ map.id }}" readonly="readonly" />
+
+    <label for="mapName">{% trans %}label.mapName{% endtrans %}</label>
+    <input type="text" id="mapName" name="mapName" value="{{ map.name }}" />
+
+    <label for="mapDescription">{% trans %}label.description{% endtrans %}</label>
+    <textarea id="mapDescription" name="mapDescription">{{ map.description }}</textarea>
+
+    <label for="mapPrivate">{% trans %}label.private{% endtrans %}</label>
+    <input type="checkbox" id="mapPrivate" name="mapPrivate"{% if map.private %} checked{% endif %} />
+
+    <label for="mapPassword">{% trans %}label.mapPassword{% endtrans %}</label>
+    <input type="password" id="mapPassword" name="mapPassword" value="{{ map.password }}" autocomplete="off" />
+
+    <div class="formButtons">
+        <div><input type="button" onClick="OMG.updateMap()" class="button-primary" value="{% trans %}button.updateMapInfos{% endtrans %}" /></div>
+        <div><input type="button" onClick="OMG.setMapCenterZoom()" class="button-info" value="{% trans %}button.updateMapCoordinates{% endtrans %}" /></div>
+    </div>
+</form>
+</div>
+
+<div id="mapDiv"></div>
+
+<script>
+
+{{ include('map/set.map.locations.html.twig') }}
+
+const map = {
+    'code': {{ map.id }},
+    'latitude': {{ map.latitude }},
+    'longitude': {{ map.longitude }},
+    'zoom': {{ map.zoom }},
+    'edit': true,
+};
+
+OMG.init();
+
+</script>
+
+<div id="markerWindow">
+    <form id="formLocation" method="post">
+        <input type="hidden" id="code" name="code" />
+        <windowTitle>{% trans %}label.locationParameters{% endtrans %}</windowTitle>
+        <crossClose onClick="OMG.hideMarkerWindow(true)">&times;</crossClose>
+        <table class="editLocation fullwidth">
+            <tbody>
+                <tr>
+                    <th class="nowrap">
+                        <label for="lat floatleft">{% trans %}label.latitude{% endtrans %}</label>
+                    </th>
+                    <td>
+                        <input type="text" id="lat" name="lat" class="fullwidth" readonly />
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="lng">{% trans %}label.longitude{% endtrans %}</label>
+                    </th>
+                    <td>
+                        <input type="text" id="lng" name="lng" class="fullwidth" readonly />
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="name">{% trans %}label.name{% endtrans %}</label>
+                    </th>
+                    <td>
+                        <input type="text" id="name" name="name" class="fullwidth" maxlength="100" required />
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="description">{% trans %}label.description{% endtrans %}</label>
+                    </th>
+                    <td>
+                        <textarea id="description" name="description" class="fullwidth" maxlength="300"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="link">{% trans %}label.link{% endtrans %}</label>
+                    </th>
+                    <td>
+                        <input type="url" id="link" name="link" class="fullwidth" maxlength="200" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="icon">{% trans %}label.icon{% endtrans %}</label>
+                    </th>
+                    <td>
+                        <select id="icon" name="icon" class="fullwidth" size="4">
+{% for file, name in icons %}
+{% set selected = '' %}
+{% if file == defaultIcon %}
+{% set selected = ' selected' %}
+{% endif %}
+                            <option value="{{ file }}" class="imageSelectOption" style="background-image: url('/icons/{{ file }}');"{{ selected }}>{{ name }}</option>
+{% endfor %}
+                        </select>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="99" class="center">
+                        <input type="button" id="buttonLocCreate" onClick="OMG.createMarker()" class="button-primary" style="display: none;" value="{% trans %}button.add{% endtrans %}" />
+                        <input type="button" id="buttonLocUpdate" onClick="OMG.updateMarker()" class="button-info"    style="display: none;" value="{% trans %}button.update{% endtrans %}" />
+                        <input type="button" id="buttonLocLocate" onClick="OMG.moveMarker()" class="button-primary" style="display: none;" value="{% trans %}button.relocate{% endtrans %}" />
+                        <input type="button" id="buttonLocDelete" onClick="OMG.removeMarker()" class="button-alert"   style="display: none;" value="{% trans %}button.remove{% endtrans %}" />
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </form>
+</div>
+
+{% endblock %}

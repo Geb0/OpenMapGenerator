@@ -1,0 +1,5 @@
+<languages>
+{% for code, name in locales %}
+    <a href="{{ path(app.request.get('_route'), app.request.get('_route_params')|merge({'_locale': code})) }}" title="{{ name }}"><img src="/images/language_{{ code }}.png" /></a>
+{% endfor %}
+</languages>

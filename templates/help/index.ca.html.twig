@@ -1,0 +1,215 @@
+<p><a href="{{ path('help.license') }}">Llicència OpenMapGenerator</a></p>
+<p><a href="{{ path('help.tou') }}">Condicions Generals d'Ús</a></p>
+
+<h2>Índex de continguts</h2>
+
+<tableOfContent>
+    <a href="#manageAccount" class="tableOfContent2">Gestió de compte d'usuari</a><br />
+    <a href="#createAccount" class="tableOfContent3">Crear un compte</a><br />
+    <a href="#connectAccount" class="tableOfContent3">Com accedir al seu compte</a><br />
+    <a href="#changeLanguage" class="tableOfContent3">Canviar l'idioma</a><br />
+    <a href="#changePassword" class="tableOfContent3">Canviar la contrasenya</a><br />
+    <a href="#lostPassword" class="tableOfContent3">Contrasenya perduda</a><br />
+    <a href="#accountDisconnect" class="tableOfContent3">Tancar la sessió del seu compte</a><br />
+    <a href="#manageMap" class="tableOfContent2">Gestió de mapes</a><br />
+    <a href="#createMap" class="tableOfContent3">Crear un nou mapa</a><br />
+    <a href="#updateMap" class="tableOfContent3">Editar un mapa</a><br />
+    <a href="#addMarker" class="tableOfContent4">Afegir una ubicació</a><br />
+    <a href="#updateMarker" class="tableOfContent4">Editar una ubicació</a><br />
+    <a href="#deleteMarker" class="tableOfContent4">Esborrar una ubicació</a><br />
+    <a href="#showMap" class="tableOfContent2">Consulta de mapes</a><br />
+    <a href="#showPublicMap" class="tableOfContent3">Mapes públics</a><br />
+    <a href="#showPrivateMap" class="tableOfContent3">Mapes privats</a><br />
+    <a href="#showRestrictedMap" class="tableOfContent3">Mapes d'accés restringit</a><br />
+</tableOfContent>
+
+<h2 id="manageAccount">Gestió de compte d'usuari</h2>
+
+<h3 id="createAccount">Crear un compte</h3>
+
+<p>Per a crear un compte:</p>
+<p>
+    <ul>
+        <li>Faci clic a <b>{% trans %}menu.connectName{% endtrans %}</b> al menú.</li>
+        <li>Faci clic en l'enllaç <b>{% trans %}menu.newDescription{% endtrans %}</b>.</li>
+        <li>Introdueixi el seu nom d'usuari en el camp <b>{% trans %}label.name{% endtrans %}</b>. Aquest camp és obligatori.</li>
+        <li>Introdueixi la seva adreça de correu electrònic en el camp <b>{% trans %}label.email{% endtrans %}</b>. Aquest camp és obligatori.</li>
+        <li>Introdueixi una contrasenya per al seu compte en el camp <b>{% trans %}label.password{% endtrans %}</b>. Aquest camp és obligatori i ha de contenir almenys 8 caràcters (lletres i/o números).</li>
+        <li>Faci clic en el botó <b>{% trans %}button.createAccount{% endtrans %}</b>.</li>
+    </ul>
+</p>
+
+<h3 id="connectAccount">Com accedir al seu compte</h3>
+
+<p>Per a accedir al seu compte:
+<ul>
+    <li>Faci clic a <b>{% trans %}menu.connectName{% endtrans %}</b> al menú.</li>
+    <li>Introdueixi la seva adreça de correu electrònic i la seva contrasenya.</li>
+    <li>Faci clic en el botó <b>{% trans %}button.connect{% endtrans %}</b>.</li>
+</ul>
+</p>
+
+<h3 id="changeLanguage">Canviar l'idioma</h3>
+
+<p>Per a canviar permanentment l'idioma del seu compte:
+    <ul>
+        <li>Accedeixi al seu compte si encara no ho ha fet.</li>
+        <li>Faci clic a <b>El seu nom</b> al menú.</li>
+        <li>Triï l'idioma desitjat en la llista <b>{% trans %}label.language{% endtrans %}</b>.</li>
+        <li>Faci clic en el botó <b>{% trans %}button.update{% endtrans %}</b>.</li>
+    </ul>
+</p>
+
+<h3 id="changePassword">Canviar la contrasenya</h3>
+
+<p>Per a canviar la contrasenya del seu compte:
+    <ul>
+        <li>Accedeixi al seu compte si encara no ho ha fet.</li>
+        <li>Faci clic a <b>El seu nom</b> al menú.</li>
+        <li>Faci clic en el botó <b>{% trans %}button.changePassword{% endtrans %}</b>.</li>
+        <li>Introdueixi la seva contrasenya actual en el camp <b>{% trans %}label.actualPassword{% endtrans %}</b>.</li>
+        <li>Introdueixi una nova contrasenya en el camp <b>{% trans %}label.newPassword{% endtrans %}</b>.</li>
+        <li>Torni a introduir la nova contrasenya en el camp <b>{% trans %}label.confirmPassword{% endtrans %}</b>.</li>
+        <li>Faci clic en el botó <b>{% trans %}button.changePassword{% endtrans %}</b>.</li>
+    </ul>
+</p>
+
+<h3 id="lostPassword">Contrasenya perduda</h3>
+
+<p>Si ha oblidatla seva contrasenya:
+    <ul>
+        <li>Faci clic a <b>{% trans %}menu.connectName{% endtrans %}</b> al menú.</li>
+        <li>Faci clic en l'enllaç <b>{% trans %}button.lostPassword{% endtrans %}</b>.</li>
+        <li>Introdueixi el seu correu electrònic en el camp <b>{% trans %}label.email{% endtrans %}</b>.</li>
+        <li>Faci clic en el botó <b>{% trans %}button.getNewPassword{% endtrans %}</b>.</li>
+        <li>Rebrà un correu electrònic amb una nova contrasenya.</li>
+    </ul>
+</p>
+
+<h3 id="accountDisconnect">Tancar la sessió del seu compte</h3>
+
+<p>Per a sortir del seu compte quan està connectat:
+    <ul>
+        <li>Faci clic en el botó <span class="logoutButton"><b>&#x23FB;</b></span> al menú.</li>
+    </ul>
+</p>
+
+<h2 id="manageMap">Gestió de mapes</h2>
+
+<p>Per a gestionar els mapes del seu compte:
+    <ul>
+        <li>Faci clic a <b>{% trans %}menu.manageName{% endtrans %}</b> al menú.</li>
+        <li>A continuació, es mostra la llista de mapes del seu compte.</li>
+        <li>A continuació, pot crear, modificar o eliminar mapes...</li>
+    </ul>
+</p>
+
+<h3 id="createMap">Crear un nou mapa</h3>
+
+<p>Per a crear un nou mapa:
+    <ul>
+        <li>Faci clic en l'enllaç <b>{% trans %}menu.createDescription{% endtrans %}</b> sota la llista.</li>
+        <li>Introdueixi un nom per al mapa en el camp <b>{% trans %}label.name{% endtrans %}</b>. Aquest camp és obligatori.</li>
+        <li>Introdueixi una descripció per al mapa en el camp <b>{% trans %}label.description{% endtrans %}</b>. Aquest camp és opcional.</li>
+        <li>Marqui la casella <b>{% trans %}label.private{% endtrans %}</b> perquè aquest mapa només sigui visible per a vostè una vegada que hagi iniciat la sessió.</li>
+        <li>Introdueixi una contrasenya per al mapa en el camp <b>{% trans %}label.password{% endtrans %}</b> si desitja que el mapa sigui visible únicament per a determinades persones. Haurà de comunicar aquesta contrasenya i l'Id del mapa a aquestes persones. <span class="error"><b>Atenció&nbsp;! No introdueixi aquí la contrasenya del seu compte</b>.</span></li>
+        <li>Faci clic en el botó <b>{% trans %}button.createMap{% endtrans %}</b>.</li>
+        <li>Apareixerà la pàgina de <b>{% trans %}menu.updateDescription{% endtrans %}</b> amb el nou mapa.</li>
+    </ul>
+</p>
+
+<h3 id="updateMap">Editar un mapa</h3>
+
+<p>Per a modificar un mapa:
+<ul>
+    <li>Faci clic en l'enllaç <b>{% trans %}button.update{% endtrans %}</b> a la dreta del mapa seleccionat en la llista de la pantalla <b>{% trans %}menu.manageName{% endtrans %}</b>.</li>
+    <li>Apareixerà la pàgina <b>{% trans %}menu.updateDescription{% endtrans %}</b>.</li>
+    <li>Editi les zones en la part superior de la pàgina i després faci clic en el botó <b>{% trans %}button.update{% endtrans %}</b>.</li>
+    <li>Centri el mapa en l'àrea a gestionar i després faci clic en el botó <b>{% trans %}button.updateMapCoordinates{% endtrans %}</b> per a canviar la vista per defecte del mapa.</li>
+</ul>
+</p>
+
+<h4 id="addMarker">Afegir una ubicació</h4>
+
+<p>Per a afegir una ubicació en el mapa;
+    <ul>
+        <li>Faci clic en la ubicació desitjada en el mapa.</li>
+        <li>Apareix una finestra amb la configuració de la ubicació.</li>
+        <li>Introdueixi un nom per a la ubicació en el camp <b>{% trans %}label.name{% endtrans %}</b>. Aquest camp és obligatori.</li>
+        <li>Introdueixi una descripció de la ubicació en el camp <b>{% trans %}label.description{% endtrans %}</b>. Aquest camp és opcional.</li>
+        <li>Introdueixi un enllaç a una pàgina web (https://...) en el camp <b>{% trans %}label.link{% endtrans %}</b>. Aquest camp és opcional.</li>
+        <li>Triï una icona per a la posició en la llista de <b>{% trans %}label.icon{% endtrans %}</b>.</li>
+        <li>Faci clic en el botó <b>{% trans %}button.add{% endtrans %}</b>.</li>
+        <li>La nova ubicació s'afegeix al mapa.</li>
+    </ul>
+</p>
+
+<h4 id="updateMarker">Editar una ubicació</h4>
+
+<p>Per a modificar una ubicació en el mapa:
+    <ul>
+        <li>Faci clic en la ubicació que desitja modificar en el mapa.</li>
+        <li>Apareix una finestra amb la configuració de la ubicació.</li>
+        <li>Canviï el nom de la ubicació en el camp <b>{% trans %}label.name{% endtrans %}</b>. Aquest camp és obligatori.</li>
+        <li>Canviï la descripció de la ubicació en el camp <b>{% trans %}label.description{% endtrans %}</b>. Aquest camp és opcional.</li>
+        <li>Modifiqui l'enllaç a una pàgina web (https://...) en el camp <b>{% trans %}label.link{% endtrans %}</b>. Aquest camp és opcional.</li>
+        <li>Triï una altra icona per a la ubicació en la llista de <b>{% trans %}label.icon{% endtrans %}</b>.</li>
+        <li>Faci clic en el botó <b>{% trans %}button.update{% endtrans %}</b>.</li>
+        <li>La ubicació es modifica llavors en el mapa.</li>
+    </ul>
+</p>
+
+<h4 id="deleteMarker">Esborrar una ubicació</h4>
+
+<p>Per a eliminar una ubicació del mapa:
+    <ul>
+        <li>Faci clic en la ubicació que desitja eliminar en el mapa.</li>
+        <li>Apareix una finestra amb la configuració de la ubicació.</li>
+        <li>Faci clic en el botó <b>{% trans %}button.remove{% endtrans %}</b>.</li>
+        <li>A continuació, la ubicació s'elimina del mapa.</li>
+    </ul>
+</p>
+
+<h2 id="showMap">Consulta de mapes</h2>
+
+<h3 id="showPublicMap">Mapes públics</h3>
+
+<p>Consultar els mapes públics:
+    <ul>
+        <li>Faci clic a <b>{% trans %}menu.showName{% endtrans %}</b>.</li>
+        <li>Es mostra la llista de mapes públics.</li>
+        <li>Faci clic en el nom d'un mapa per a consultar-lo.</li>
+    </ul>
+</p>
+
+<h3 id="showPrivateMap">Mapes privats</h3>
+
+<p>Consultar mapes privats:
+    <ul>
+        <li>Faci clic a <b>{% trans %}menu.showName{% endtrans %}</b>.</li>
+        <li>Es mostra la llista de mapes públics.</li>
+        <li>Si està connectat, també es mostren els seus mapes privats i restringits.</li>
+        <li>Faci clic en el nom d'un mapa per a consultar-lo.</li>
+    </ul>
+</p>
+
+<h3 id="showRestrictedMap">Mapes d'accés restringit</h3>
+
+<p>Per a veure els mapes amb accés restringit:
+    <ul>
+        <li>Faci clic a <b>{% trans %}menu.showName{% endtrans %}</b>.</li>
+        <li>Sota la llista, en la secció <b>{% trans %}subtitle.accessRestrictedMap{% endtrans %}</b>&nbsp;:
+            <ul>
+                <li>Introdueixi l'identificador del mapa en el camp <b>{% trans %}label.mapId{% endtrans %}</b>.</li>
+                <li>Introdueixi la contrasenya del mapa en el camp <b>{% trans %}label.password{% endtrans %}</b>.</li>
+                <li>Faci clic en el botó <b>{% trans %}button.showMap{% endtrans %}</b>.</li>
+                 <li>Proveu amb:
+                    <ul>
+                        <li>Identificador: 2</li>
+                        <li>Contrasenya: pass</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</p>

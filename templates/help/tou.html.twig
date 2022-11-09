@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}OMG - OpenMapGenerator - {% trans %}menu.touDescription{% endtrans %}{% endblock %}
+
+{% block body %}
+
+<h1>{% trans %}menu.touDescription{% endtrans %}</h1>
+
+{{ include(['help/tou.' ~ app.request.locale ~ '.html.twig', 'help/tou.' ~ defaultLocale ~ '.html.twig']) }}
+
+{% endblock %}

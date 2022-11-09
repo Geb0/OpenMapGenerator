@@ -1,0 +1,11 @@
+Support message
+
+From: {% if userId %}#{{ userId }} {% endif %}{{ userName }} {{ userEmail }}
+
+At: {{ messageDate | date('Y-m-d H-i-s') }}
+
+Subject: {{ messageSubject }}
+
+---------------------------------------------
+
+{{ messageContent }}

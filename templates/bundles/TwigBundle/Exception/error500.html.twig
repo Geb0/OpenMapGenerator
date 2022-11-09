@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+{% include 'head.html.twig' %}
+<title>{% block title %}OMG - OpenMapGenerator - 500 Server error{% endblock %}</title>
+</head>
+<body>
+{% include 'notification.html.twig' %}
+<main>
+<sitename>
+<div id="fullsitename"><img src="/logo.png" /> OMG - OpenMapGenerator - v1.1</div>
+<div id="minisitename"><img src="/logo.png" /> OMG - v1.1</div>
+</sitename>
+{% include 'menu.html.twig' %}
+<content class="center">
+{% block body %}
+<div class="center" style="display: inline-block; margin: 0 auto; width: 500px; max-width: 100%;">
+<h1>500 Server error</h1>
+<h2>Sorry but the server is currently unable to handle this request, or overloaded, or lost in the matrix.</h2>
+<p><img src="/images/500.jpg" class="errorPicture" /></p>
+<h2>Please try again later and inform us if the problem persist.</h2>
+</div>
+{% endblock %}
+</content>
+</main>
+</body>
+</html>

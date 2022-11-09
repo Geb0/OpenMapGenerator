@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}OMG - OpenMapGenerator - Administration{% endblock %}
+
+{% block body %}
+<h1>Administration</h1>
+
+<p><a href="{{ path('admin.users') }}">Manage Users</a></p>
+
+<p><a href="{{ path('admin.maps') }}">Manage Maps</a></p>
+
+<p><a href="{{ path('admin.locations') }}">Manage Locations</a></p>
+
+{% endblock %}

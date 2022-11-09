@@ -1,0 +1,24 @@
+<div id="notificationBar"></div>
+<script>
+
+var messageInfo = '';
+{% for message in app.flashes('info') %}
+messageInfo += "{{ message }}<br />";
+{%  endfor %}
+
+if(messageInfo !== '')
+{
+        OMG.showNotificationBar(messageInfo, 'notificationBarInfo');
+}
+
+var messageError = '';
+{% for message in app.flashes('error') %}
+messageError += "{{ message }}<br />";
+{%  endfor %}
+
+if(messageError !== '')
+{
+        OMG.showNotificationBar(messageError, 'notificationBarError');
+}
+
+</script>

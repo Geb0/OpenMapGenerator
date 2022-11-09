@@ -1,0 +1,27 @@
+{% extends "base.html.twig" %}
+
+{% block title %}OMG - OpenMapGenerator - {% trans %}menu.supportDescription{% endtrans %}{% endblock %}
+
+{% block body %}
+
+<h1>{% trans %}menu.supportDescription{% endtrans %}</h1>
+
+<div class="formDiv">
+
+    {{ form_start(form) }}
+
+        {{ form_row(form.name) }}
+        {{ form_row(form.email) }}
+        {{ form_row(form.subject) }}
+        {{ form_row(form.message) }}
+        {{ form_row(form.captcha) }}
+
+        <div class="formButtons">
+            {{ form_row(form.send) }}
+        </div>
+
+    {{ form_end(form) }}
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,707 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" target-language="ca" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="BfvFjS0" resname="ROLE_USER">
+        <source>ROLE_USER</source>
+        <target>Usuari</target>
+      </trans-unit>
+      <trans-unit id="BfvFjS1" resname="ROLE_ADMIN">
+        <source>ROLE_ADMIN</source>
+        <target>Administrador</target>
+      </trans-unit>
+      <trans-unit id="BfvFjS2" resname="ROLE_SUPERVISOR">
+        <source>ROLE_SUPERVISOR</source>
+        <target>Supervisor</target>
+      </trans-unit>
+
+      <trans-unit id="BfvFjSC" resname="bannerIndex">
+        <source>bannerIndex</source>
+        <target>OpenMapGenerator, creació senzilla de mapes amb ubicacions personalitzades.</target>
+      </trans-unit>
+
+      <trans-unit id="BfvFjA0" resname="bottom.license">
+        <source>bottom.license</source>
+        <target>sota llicència GNU</target>
+      </trans-unit>
+      <trans-unit id="BfvFjA1" resname="bottom.support">
+        <source>bottom.support</source>
+        <target>Contacte d'assistència</target>
+      </trans-unit>
+      <trans-unit id="BfvFjA2" resname="bottom.tou">
+        <source>bottom.tou</source>
+        <target>Condicions Generals d'Ús</target>
+      </trans-unit>
+
+      <trans-unit id="mnJL3fQ" resname="button.add">
+        <source>button.add</source>
+        <target>Afegir</target>
+      </trans-unit>
+      <trans-unit id="hXiJZ6w" resname="button.changePassword">
+        <source>button.changePassword</source>
+        <target>Canviar la contrasenya</target>
+      </trans-unit>
+      <trans-unit id="HWriHJ5" resname="button.connect">
+        <source>button.connect</source>
+        <target>Connectar</target>
+      </trans-unit>
+      <trans-unit id="1683aA6" resname="button.create">
+        <source>button.create</source>
+        <target>Crear</target>
+      </trans-unit>
+      <trans-unit id="Fd9BG60" resname="button.createAccount">
+        <source>button.createAccount</source>
+        <target>Crear un compte</target>
+      </trans-unit>
+      <trans-unit id="1683aA7" resname="button.createMap">
+        <source>button.createMap</source>
+        <target>Crear el mapa</target>
+      </trans-unit>
+      <trans-unit id="ZVVHH.C" resname="button.delete">
+        <source>button.delete</source>
+        <target>Suprimir</target>
+      </trans-unit>
+      <trans-unit id="ZVVHH.D" resname="button.deleteMap">
+        <source>button.deleteMap</source>
+        <target>Suprimir el mapa</target>
+      </trans-unit>
+      <trans-unit id="ZVVHH.2" resname="button.getNewPassword">
+        <source>button.getNewPassword</source>
+        <target>Restablir contrasenya</target>
+      </trans-unit>
+      <trans-unit id="ZVVHH.1" resname="button.lostPassword">
+        <source>button.lostPassword</source>
+        <target>Contrasenya oblidada</target>
+      </trans-unit>
+      <trans-unit id="e7OO6Aa" resname="button.relocate">
+        <source>button.relocate</source>
+        <target>Moure la ubicació</target>
+      </trans-unit>
+      <trans-unit id="e7OO6A." resname="button.remove">
+        <source>button.remove</source>
+        <target>Eliminar</target>
+      </trans-unit>
+      <trans-unit id="LUs23vA" resname="button.reset">
+        <source>button.reset</source>
+        <target>Restableix valors</target>
+      </trans-unit>
+      <trans-unit id="LUs23vB" resname="button.resetPassword">
+        <source>button.resetPassword</source>
+        <target>Restableix contrasenya</target>
+      </trans-unit>
+      <trans-unit id="LUs23vC" resname="button.send">
+        <source>button.send</source>
+        <target>Enviar</target>
+      </trans-unit>
+      <trans-unit id="TcQFT40" resname="button.showMapPassword">
+        <source>button.showMapPassword</source>
+        <target>Veure la contrasenya del mapa</target>
+      </trans-unit>
+      <trans-unit id="TcQFT4d" resname="button.showMap">
+        <source>button.showMap</source>
+        <target>Veure mapa</target>
+      </trans-unit>
+      <trans-unit id="SuJPSME" resname="button.update">
+        <source>button.update</source>
+        <target>Modificar</target>
+      </trans-unit>
+      <trans-unit id="tSUjSSn" resname="button.updatePassword">
+        <source>button.updatePassword</source>
+        <target>Canviar la contrasenya</target>
+      </trans-unit>
+      <trans-unit id="TDeFj6j" resname="button.updateMapCoordinates">
+        <source>button.updateMapCoordinates</source>
+        <target>Guardar la vista</target>
+      </trans-unit>
+      <trans-unit id="uzM627g" resname="button.updateMapInfos">
+        <source>button.updateMapInfos</source>
+        <target>Actualitzar</target>
+      </trans-unit>
+
+      <trans-unit id="email_0" resname="email.recoverSubject">
+        <source>email.recoverSubject</source>
+        <target>OMG - Restablir contrasenya</target>
+      </trans-unit>
+
+      <trans-unit id="form.ca" resname="form.ca">
+        <source>form.ca</source>
+        <target>Català</target>
+      </trans-unit>
+      <trans-unit id="form.en" resname="form.en">
+        <source>form.en</source>
+        <target>English</target>
+      </trans-unit>
+      <trans-unit id="form.es" resname="form.es">
+        <source>form.es</source>
+        <target>Español</target>
+      </trans-unit>
+      <trans-unit id="form.fr" resname="form.fr">
+        <source>form.fr</source>
+        <target>Français</target>
+      </trans-unit>
+
+      <trans-unit id="JCjsyyA" resname="info.accountCreated">
+        <source>info.accountCreated</source>
+        <target>Compte creat. Ja es pot connectar.</target>
+      </trans-unit>
+      <trans-unit id="H4L3h4w" resname="info.accountUpdated">
+        <source>info.accountUpdated</source>
+        <target>El compte s'ha modificat.</target>
+      </trans-unit>
+      <trans-unit id="Z6Jtq4v" resname="info.disconnected">
+        <source>info.disconnected</source>
+        <target>Ara heu tancat la sessió del vostre compte. Que vagi bé!</target>
+      </trans-unit>
+      <trans-unit id="mdDuZ6K" resname="info.mapCreated">
+        <source>info.mapCreated</source>
+        <target>El novo mapa s'ha afegit amb el identificador {id}.</target>
+      </trans-unit>
+      <trans-unit id="FFkXb6O" resname="info.mapDeleted">
+        <source>info.mapDeleted</source>
+        <target>El mapa s'ha eliminat.</target>
+      </trans-unit>
+      <trans-unit id="RFDfo3d" resname="info.passwordUpdated">
+        <source>info.passwordUpdated</source>
+        <target>La contrasenya s'ha modificat.</target>
+      </trans-unit>
+      <trans-unit id="pvchnPh" resname="info.recoverPasswordSend">
+        <source>info.recoverPasswordSend</source>
+        <target>S'ha enviat un missatge al compte de correu electrònic per restablir la contrasenya.</target>
+      </trans-unit>
+      <trans-unit id="pvchnPi" resname="info.resetPasswordDone">
+        <source>info.resetPasswordDone</source>
+        <target>S'ha desat la nova contrasenya.</target>
+      </trans-unit>
+      <trans-unit id="MeFvG_0" resname="info.searchmapname">
+        <source>info.searchmapname</source>
+        <target>Búsqueda de mapas que contengan</target>
+      </trans-unit>
+      <trans-unit id="MeFvG__" resname="info.showPassword">
+        <source>info.showPassword</source>
+        <target>La contrasenya del mapa {map} es {password}</target>
+      </trans-unit>
+      <trans-unit id="MeFvG_1" resname="info.supportMessageSent">
+        <source>info.supportMessageSent</source>
+        <target>El missatge s'ha enviat al servei de suport.</target>
+      </trans-unit>
+
+      <trans-unit id="pGNZ2kD" resname="error.accessingMap">
+        <source>error.accessingMap</source>
+        <target>Error : Error en l'accés al mapa.</target>
+      </trans-unit>
+      <trans-unit id="TvyXsZo" resname="error.actualPassword">
+        <source>error.actualPassword</source>
+        <target>Error : La contrasenya actual és incorrecta.</target>
+      </trans-unit>
+      <trans-unit id="llNQc12" resname="error.confirmNewPassword">
+        <source>error.confirmNewPassword</source>
+        <target>Error : La nova contrasenya no és igual a la confirmació.</target>
+      </trans-unit>
+      <trans-unit id="zbBLCkR" resname="error.emailExists">
+        <source>error.emailExists</source>
+        <target>Error : L'adreça e-mail ja existeix. Triï una altra.</target>
+      </trans-unit>
+      <trans-unit id="dSMpSxf" resname="error.emailMandatory">
+        <source>error.emailMandatory</source>
+        <target>Error : L'adreça e-mail és obligatòria.</target>
+      </trans-unit>
+      <trans-unit id="zvKEu5E" resname="error.languageUnknown">
+        <source>error.languageUnknown</source>
+        <target>Error : La llengua és deconeguda.</target>
+      </trans-unit>
+      <trans-unit id="7f8em5K" resname="error.nameMandatory">
+        <source>error.nameMandatory</source>
+        <target>Error : El nom és obligatori.</target>
+      </trans-unit>
+      <trans-unit id="Kipj503" resname="error.passwordConfirm">
+        <source>error.passwordConfirm</source>
+        <target>Error : La contrasenya no és igual a la confirmació.</target>
+      </trans-unit>
+      <trans-unit id="0FlWNcu" resname="error.passwordLength">
+        <source>error.passwordLength</source>
+        <target>Error : La nova contraseña ha de tenir 8 caracters com a mínim.</target>
+      </trans-unit>
+      <trans-unit id="JT70GyO" resname="error.emailNotSent">
+        <source>error.emailNotSent</source>
+        <target>Error : El correu electrònic no s'ha pogut enviar, torneu-ho a provar.</target>
+      </trans-unit>
+      <trans-unit id="1vWe3pC" resname="error.unknown">
+        <source>error.unknown</source>
+        <target>Error : Això no hauria de passar, si us plau, feu-nos-ho saber.</target>
+      </trans-unit>
+
+      <trans-unit id="mmYD4fU" resname="icon.default">
+        <source>icon.default</source>
+        <target>Marcador</target>
+      </trans-unit>
+      <trans-unit id="8cu6Duo" resname="icon.camping">
+        <source>icon.camping</source>
+        <target>Càmping</target>
+      </trans-unit>
+      <trans-unit id="CDcRmYm" resname="icon.carpark">
+        <source>icon.carpark</source>
+        <target>Pàrquing</target>
+      </trans-unit>
+      <trans-unit id="MXO9rhn" resname="icon.castle">
+        <source>icon.castle</source>
+        <target>Castell</target>
+      </trans-unit>
+      <trans-unit id="bpiz3B2" resname="icon.city">
+        <source>icon.city</source>
+        <target>Ciutat</target>
+      </trans-unit>
+      <trans-unit id="hp0j0sh" resname="icon.concert">
+        <source>icon.concert</source>
+        <target>Concert</target>
+      </trans-unit>
+      <trans-unit id="Rf8O1jC" resname="icon.festival">
+        <source>icon.festival</source>
+        <target>Festival</target>
+      </trans-unit>
+      <trans-unit id="4hE3OIJ" resname="icon.forest">
+        <source>icon.forest</source>
+        <target>Bosc</target>
+      </trans-unit>
+      <trans-unit id="q55DqLg" resname="icon.hospital">
+        <source>icon.hospital</source>
+        <target>Hospital</target>
+      </trans-unit>
+      <trans-unit id="sajLqbn" resname="icon.hotel">
+        <source>icon.hotel</source>
+        <target>Hotel</target>
+      </trans-unit>
+      <trans-unit id="iOICd_M" resname="icon.house">
+        <source>icon.house</source>
+        <target>Casa</target>
+      </trans-unit>
+      <trans-unit id="H.gX4gI" resname="icon.monument">
+        <source>icon.monument</source>
+        <target>Monument</target>
+      </trans-unit>
+      <trans-unit id="sNEESCA" resname="icon.museum">
+        <source>icon.museum</source>
+        <target>Museu</target>
+      </trans-unit>
+      <trans-unit id="v1.8M5V" resname="icon.number01">
+        <source>icon.number01</source>
+        <target>Número 1</target>
+      </trans-unit>
+      <trans-unit id="v2qGhXq" resname="icon.number02">
+        <source>icon.number02</source>
+        <target>Número 2</target>
+      </trans-unit>
+      <trans-unit id="YbE0gUo" resname="icon.number03">
+        <source>icon.number03</source>
+        <target>Número 3</target>
+      </trans-unit>
+      <trans-unit id="rBRNf7T" resname="icon.number04">
+        <source>icon.number04</source>
+        <target>Número 4</target>
+      </trans-unit>
+      <trans-unit id="nlkHE0S" resname="icon.number05">
+        <source>icon.number05</source>
+        <target>Número 5</target>
+      </trans-unit>
+      <trans-unit id="E.Bp1JD" resname="icon.number06">
+        <source>icon.number06</source>
+        <target>Número 6</target>
+      </trans-unit>
+      <trans-unit id="wqDpd.R" resname="icon.number07">
+        <source>icon.number07</source>
+        <target>Número 7</target>
+      </trans-unit>
+      <trans-unit id="Ft1qv3Q" resname="icon.number08">
+        <source>icon.number08</source>
+        <target>Número 8</target>
+      </trans-unit>
+      <trans-unit id="5jppm.b" resname="icon.number09">
+        <source>icon.number09</source>
+        <target>Número 9</target>
+      </trans-unit>
+      <trans-unit id="egCV8D7" resname="icon.number10">
+        <source>icon.number10</source>
+        <target>Número 10</target>
+      </trans-unit>
+      <trans-unit id="gZ_BWyG" resname="icon.number11">
+        <source>icon.number11</source>
+        <target>Número 11</target>
+      </trans-unit>
+      <trans-unit id="dWC_4a8" resname="icon.number12">
+        <source>icon.number12</source>
+        <target>Número 12</target>
+      </trans-unit>
+      <trans-unit id="EiQm46Q" resname="icon.number13">
+        <source>icon.number13</source>
+        <target>Número 13</target>
+      </trans-unit>
+      <trans-unit id="UYPf4qL" resname="icon.number14">
+        <source>icon.number14</source>
+        <target>Número 14</target>
+      </trans-unit>
+      <trans-unit id="ibiNKE9" resname="icon.number15">
+        <source>icon.number15</source>
+        <target>Número 15</target>
+      </trans-unit>
+      <trans-unit id="j0DJJwE" resname="icon.number16">
+        <source>icon.number16</source>
+        <target>Número 16</target>
+      </trans-unit>
+      <trans-unit id="8o3N4o7" resname="icon.number17">
+        <source>icon.number17</source>
+        <target>Número 17</target>
+      </trans-unit>
+      <trans-unit id="qkaiqn0" resname="icon.number18">
+        <source>icon.number18</source>
+        <target>Número 18</target>
+      </trans-unit>
+      <trans-unit id="kKMHtRW" resname="icon.number19">
+        <source>icon.number19</source>
+        <target>Número 19</target>
+      </trans-unit>
+      <trans-unit id="LFHOJCF" resname="icon.number20">
+        <source>icon.number20</source>
+        <target>Número 20</target>
+      </trans-unit>
+      <trans-unit id="uwBpaK." resname="icon.pharmacy">
+        <source>icon.pharmacy</source>
+        <target>Farmacia</target>
+      </trans-unit>
+      <trans-unit id="kuLWLRg" resname="icon.picnic">
+        <source>icon.picnic</source>
+        <target>Pícnic</target>
+      </trans-unit>
+      <trans-unit id=".HS3ZBP" resname="icon.restaurant">
+        <source>icon.restaurant</source>
+        <target>Restaurant</target>
+      </trans-unit>
+      <trans-unit id="ftkTUnD" resname="icon.shop">
+        <source>icon.shop</source>
+        <target>Botiga</target>
+      </trans-unit>
+      <trans-unit id="wg8iuwT" resname="icon.templarcross">
+        <source>icon.templarcross</source>
+        <target>Jaciment templer</target>
+      </trans-unit>
+      <trans-unit id="jO8CAL7" resname="icon.temple">
+        <source>icon.temple</source>
+        <target>Temple</target>
+      </trans-unit>
+      <trans-unit id="firi_2U" resname="icon.themepark">
+        <source>icon.themepark</source>
+        <target>Parc d'attracions</target>
+      </trans-unit>
+      <trans-unit id="firi_2V" resname="icon.viewpoint">
+        <source>icon.viewpoint</source>
+        <target>Mirador</target>
+      </trans-unit>
+      <trans-unit id="GLe6UAg" resname="js.createMarkerAlreadyExists">
+        <source>js.createMarkerAlreadyExists</source>
+        <target>Error : Aquesta ubicació ja existeix.</target>
+      </trans-unit>
+      <trans-unit id="uCLF8h_" resname="js.generatePopupMoreInfos">
+        <source>js.generatePopupMoreInfos</source>
+        <target>Més informació...</target>
+      </trans-unit>
+      <trans-unit id="nb1VKYF" resname="js.generatePopupWith">
+        <source>js.generatePopupWith</source>
+        <target>Anar amb</target>
+      </trans-unit>
+      <trans-unit id="OiXEP7Z" resname="js.responseUpdateKO">
+        <source>js.responseUpdateKO</source>
+        <target>Error : La informació del mapa no s'ha actualizat. Torneu a intentar-ho.</target>
+      </trans-unit>
+      <trans-unit id="CJBdeaf" resname="js.responseUpdateOK">
+        <source>js.responseUpdateOK</source>
+        <target>Mapa actualitzat.</target>
+      </trans-unit>
+      <trans-unit id="7Lea9M8" resname="js.responseCreateLocationKO">
+        <source>js.responseCreateLocationKO</source>
+        <target>Error : La nova ubicació del mapa no s'ha afegit. Torneu a intentar-ho.</target>
+      </trans-unit>
+      <trans-unit id="fBdiBYU" resname="js.responseCreateLocationOK">
+        <source>js.responseCreateLocationOK</source>
+        <target>La nova ubicació del mapa s'ha afegit.</target>
+      </trans-unit>
+      <trans-unit id="MxqmSSz" resname="js.responseDeleteLocationKO">
+        <source>js.responseDeleteLocationKO</source>
+        <target>Error : La ubicación del mapa no s'ha eliminat. Torneu a intentar-ho.</target>
+      </trans-unit>
+      <trans-unit id="QlNmZqM" resname="js.responseDeleteLocationOK">
+        <source>js.responseDeleteLocationOK</source>
+        <target>La ubicación del mapa s'ha eliminat.</target>
+      </trans-unit>
+      <trans-unit id="lcR4CKP" resname="js.responseUpdateCenterKO">
+        <source>js.responseUpdateCenterKO</source>
+        <target>Error : Les coordenades del mapa no s'han actualitzat. Torneu a intentar-ho.</target>
+      </trans-unit>
+      <trans-unit id="GdEoJkZ" resname="js.responseUpdateCenterOK">
+        <source>js.responseUpdateCenterOK</source>
+        <target>Les coordenades del mapa s'han actualitzat.</target>
+      </trans-unit>
+      <trans-unit id="htOwm.3" resname="js.responseUpdateLocationKO">
+        <source>js.responseUpdateLocationKO</source>
+        <target>Error : La ubicació del mapa no s'ha actualizat. Torneu a intentar-ho.</target>
+      </trans-unit>
+      <trans-unit id="Tx2Gwmo" resname="js.responseUpdateLocationOK">
+        <source>js.responseUpdateLocationOK</source>
+        <target>La ubicació del mapa s'ha actualizat.</target>
+      </trans-unit>
+      <trans-unit id="Tx2Gwmp" resname="js.toRelocateLocation">
+        <source>js.toRelocateLocation</source>
+        <target>Faci clic al mapa en la nova posició per moure la ubicació.</target>
+      </trans-unit>
+      <trans-unit id="TaFqQLO" resname="js.updateMapEmptyName">
+        <source>js.updateMapEmptyName</source>
+        <target>Error : El nom del mapa és obligatori.</target>
+      </trans-unit>
+      <trans-unit id="CGhPfOr" resname="js.updateMarkerError">
+        <source>js.updateMarkerError</source>
+        <target>Error : Això no hauria de passar, si us plau, feu-nos-ho saber.</target>
+      </trans-unit>
+      <trans-unit id="i67GJQR" resname="js.updateMarkerEmptyName">
+        <source>js.updateMarkerEmptyName</source>
+        <target>Error : El nom de la ubicació és obligatori.</target>
+      </trans-unit>
+
+      <trans-unit id="zldXQq5" resname="label.acceptTOU">
+        <source>label.acceptTOU</source>
+        <target>En crear un compte a OpenMapGenerator, accepteu les Condicions Generals d'Ús disponibles aquí.</target>
+      </trans-unit>
+      <trans-unit id="zldXQq6" resname="label.actions">
+        <source>label.actions</source>
+        <target>Accions</target>
+      </trans-unit>
+      <trans-unit id="zldXQq7" resname="label.actualPassword">
+        <source>label.actualPassword</source>
+        <target>Contrasenya actual</target>
+      </trans-unit>
+      <trans-unit id="WcFRIhf" resname="label.confirmPassword">
+        <source>label.confirmPassword</source>
+        <target>Confirmar contrasenya</target>
+      </trans-unit>
+      <trans-unit id="Pfy6DrA" resname="label.countFoundMaps">
+        <source>label.countFoundMaps</source>
+        <target>{count} mapa(es) trobada(es). Feu clic al nom d'un mapa per veure'l.</target>
+      </trans-unit>
+      <trans-unit id="4cEApe1" resname="label.description">
+        <source>label.description</source>
+        <target>Descripció</target>
+      </trans-unit>
+      <trans-unit id="D2N6_cP" resname="label.email">
+        <source>label.email</source>
+        <target>E-mail</target>
+      </trans-unit>
+      <trans-unit id="h_St8PK" resname="label.icon">
+        <source>label.icon</source>
+        <target>Icona</target>
+      </trans-unit>
+      <trans-unit id="txRonia" resname="label.id">
+        <source>label.id</source>
+        <target>Id</target>
+      </trans-unit>
+      <trans-unit id="txdfkjs" resname="label.language">
+        <source>label.language</source>
+        <target>Llengua</target>
+      </trans-unit>
+      <trans-unit id="jcZmfYR" resname="label.latitude">
+        <source>label.latitude</source>
+        <target>Latitud</target>
+      </trans-unit>
+      <trans-unit id="jbdcgnz" resname="label.link">
+        <source>label.link</source>
+        <target>Enllaç</target>
+      </trans-unit>
+      <trans-unit id="6BPxj1g" resname="label.locationParameters">
+        <source>label.locationParameters</source>
+        <target>Configuració d'ubicació</target>
+      </trans-unit>
+      <trans-unit id="T4_gJBu" resname="label.longitude">
+        <source>label.longitude</source>
+        <target>Longitud</target>
+      </trans-unit>
+      <trans-unit id="EI1nk6m" resname="label.mapId">
+        <source>label.mapId</source>
+        <target>Mapa identificador</target>
+      </trans-unit>
+      <trans-unit id="FiHEuKJ" resname="label.mapListLegend">
+        <source>label.mapListLegend</source>
+        <target>(*) R : Mapa amb accés restringit, P : Mapa privat</target>
+      </trans-unit>
+      <trans-unit id="o4Safkj" resname="label.mapName">
+        <source>label.mapName</source>
+        <target>Nom del mapa</target>
+      </trans-unit>
+      <trans-unit id="XI6k41d" resname="label.mapPassword">
+        <source>label.mapPassword</source>
+        <target>Contrasenya del mapa</target>
+      </trans-unit>
+      <trans-unit id="XI6k41e" resname="label.message">
+        <source>label.message</source>
+        <target>Missatge</target>
+      </trans-unit>
+      <trans-unit id="ysOvPSq" resname="label.name">
+        <source>label.name</source>
+        <target>Nom</target>
+      </trans-unit>
+      <trans-unit id="Rz21xcu" resname="label.nameDescription">
+        <source>label.nameDescription</source>
+        <target>Nom i descripció</target>
+      </trans-unit>
+      <trans-unit id="EF4PeOC" resname="label.newPassword">
+        <source>label.newPassword</source>
+        <target>Nova contrasenya</target>
+      </trans-unit>
+      <trans-unit id="bo6qnDn" resname="label.newPasswordConfirm">
+        <source>label.newPasswordConfirm</source>
+        <target>Confirmar contrasenya</target>
+      </trans-unit>
+      <trans-unit id=".kXVDoN" resname="label.noMapFound">
+        <source>label.noMapFound</source>
+        <target>No s'han trobat mapes.</target>
+      </trans-unit>
+      <trans-unit id="9pvowqn" resname="label.password">
+        <source>label.password</source>
+        <target>Contrasenya</target>
+      </trans-unit>
+      <trans-unit id="KG1ifLR" resname="label.private">
+        <source>label.private</source>
+        <target>Privat</target>
+      </trans-unit>
+      <trans-unit id="O2X4xZG" resname="label.searchName">
+        <source>label.searchName</source>
+        <target>Buscar</target>
+      </trans-unit>
+      <trans-unit id="O2X4xZI" resname="label.subject">
+        <source>label.subject</source>
+        <target>Tema</target>
+      </trans-unit>
+      <trans-unit id="O2X4xZH" resname="label.user">
+        <source>label.user</source>
+        <target>Usuari</target>
+      </trans-unit>
+
+      <trans-unit id="uarxsJ0" resname="menu.supportDescription">
+        <source>menu.supportDescription</source>
+        <target>Suport tècnic</target>
+      </trans-unit>
+      <trans-unit id="uarxsJ1" resname="menu.touDescription">
+        <source>menu.touDescription</source>
+        <target>Condicions Generals d'Ús</target>
+      </trans-unit>
+      <trans-unit id="uarxsJj" resname="menu.accountDescription">
+        <source>menu.accountDescription</source>
+        <target>Gestió de la informació del compte</target>
+      </trans-unit>
+      <trans-unit id="SdWik3A" resname="menu.changePassword">
+        <source>menu.changePassword</source>
+        <target>Canviar de contrasenya</target>
+      </trans-unit>
+      <trans-unit id="eSwDGIY" resname="menu.connectDescription">
+        <source>menu.connectDescription</source>
+        <target>Connexió amb el compte</target>
+      </trans-unit>
+      <trans-unit id="b1sANHv" resname="menu.connectName">
+        <source>menu.connectName</source>
+        <target>Connexió</target>
+      </trans-unit>
+      <trans-unit id="o21WEbt" resname="menu.createDescription">
+        <source>menu.createDescription</source>
+        <target>Crear un nou mapa</target>
+      </trans-unit>
+      <trans-unit id="maWLPID" resname="menu.deleteDescription">
+        <source>menu.deleteDescription</source>
+        <target>Suprimir un mapa existent</target>
+      </trans-unit>
+      <trans-unit id="2il7FeC" resname="menu.disconnectDescription">
+        <source>menu.disconnectDescription</source>
+        <target>Desconnectar-se del compte {user}</target>
+      </trans-unit>
+      <trans-unit id="jGPWa55" resname="menu.helpDescription">
+        <source>menu.helpDescription</source>
+        <target>Com utilitzar OMG</target>
+      </trans-unit>
+      <trans-unit id="aPp3yvw" resname="menu.helpName">
+        <source>menu.helpName</source>
+        <target>Ajuda</target>
+      </trans-unit>
+      <trans-unit id="vQUvnVc" resname="menu.homeDescription">
+        <source>menu.homeDescription</source>
+        <target>Pàgina principal</target>
+      </trans-unit>
+      <trans-unit id="5kNi3AK" resname="menu.homeName">
+        <source>menu.homeName</source>
+        <target>Inici</target>
+      </trans-unit>
+      <trans-unit id="5kNi3AL" resname="menu.lostPasswordDescription">
+        <source>menu.lostPasswordDescription</source>
+        <target>Contrasenya perduda</target>
+      </trans-unit>
+      <trans-unit id="KATXOQl" resname="menu.manageDescription">
+        <source>menu.manageDescription</source>
+        <target>Gestió dels mapes del compte</target>
+      </trans-unit>
+      <trans-unit id="wT29qk2" resname="menu.manageName">
+        <source>menu.manageName</source>
+        <target>Gestió</target>
+      </trans-unit>
+      <trans-unit id="KILeHCW" resname="menu.newDescription">
+        <source>menu.newDescription</source>
+        <target>Crear un nou compte</target>
+      </trans-unit>
+      <trans-unit id="KILeHCX" resname="menu.resetPasswordDescription">
+        <source>menu.resetPasswordDescription</source>
+        <target>Restabliment de contrasenya</target>
+      </trans-unit>
+      <trans-unit id="joB.5wY" resname="menu.showDescription">
+        <source>menu.showDescription</source>
+        <target>Consultar mapes</target>
+      </trans-unit>
+      <trans-unit id="d5Xzgt." resname="menu.showName">
+        <source>menu.showName</source>
+        <target>Mapes</target>
+      </trans-unit>
+      <trans-unit id="zARp_LN" resname="menu.updateDescription">
+        <source>menu.updateDescription</source>
+        <target>Modificar un mapa existent</target>
+      </trans-unit>
+
+      <trans-unit id="rkWPhc0" resname="search.tabList">
+        <source>search.tabList</source>
+        <target>Llista de mapes</target>
+      </trans-unit>
+      <trans-unit id="rkWPhc1" resname="search.tabId">
+        <source>search.tabId</source>
+        <target>Buscar pel id</target>
+      </trans-unit>
+      <trans-unit id="rkWPhc2" resname="search.tabRestricted">
+        <source>search.tabRestricted</source>
+        <target>Mapa restringit</target>
+      </trans-unit>
+
+      <trans-unit id="TlOsH28" resname="subtitle.showMap">
+        <source>subtitle.showMap</source>
+        <target>{name} per {user}</target>
+      </trans-unit>
+
+      <trans-unit id="support.error" resname="support.error">
+        <source>support.error</source>
+        <target>Error</target>
+      </trans-unit>
+      <trans-unit id="support.info" resname="support.info">
+        <source>support.info</source>
+        <target>Informació</target>
+      </trans-unit>
+      <trans-unit id="support.suggest" resname="support.suggest">
+        <source>support.suggest</source>
+        <target>Suggeriment</target>
+      </trans-unit>
+      <trans-unit id="support.tou" resname="support.tou">
+        <source>support.tou</source>
+        <target>Condicions Generals d'Ús</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

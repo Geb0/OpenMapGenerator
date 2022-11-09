@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+OMG - OpenMapGenerator - {% trans with {
+    '{name}': map.name,
+    '{user}': map.user.getName
+} %}subtitle.showMap{% endtrans %}
+{% endblock %}
+
+{% block body %}
+
+<h1 style="display: none;">
+    {% trans with {
+    '{name}': map.name,
+    '{user}': map.user.getName
+} %}subtitle.showMap{% endtrans %} - {{ map.description }}
+</h1>
+<mapTitle>
+    {% trans with {
+    '{name}': '<b>' ~ map.name ~ '</b>',
+    '{user}': map.user.getName
+} %}subtitle.showMap{% endtrans %}<br />{{ map.description }}
+</mapTitle>
+<span id="screenInitialPosition"></span>
+<div id="mapDiv"></div>
+
+<script>
+
+{{ include('map/set.map.locations.html.twig') }}
+
+const map = {
+    'code': {{ map.id }},
+    'latitude': {{ map.latitude }},
+    'longitude': {{ map.longitude }},
+    'zoom': {{ map.zoom }},
+    'edit': false,
+};
+
+OMG.init();
+
+</script>
+
+{% endblock %}

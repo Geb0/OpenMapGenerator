@@ -1,0 +1,215 @@
+<p><a href="{{ path('help.license') }}">Licencia de OpenMapGenerator</a></p>
+<p><a href="{{ path('help.tou') }}">Condiciones Generales de Uso</a></p>
+
+<h2>Índice de contenidos</h2>
+
+<tableOfContent>
+    <a href="#manageAccount" class="tableOfContent2">Gestión de cuentas de usuario</a><br />
+    <a href="#createAccount" class="tableOfContent3">Crear una cuenta</a><br />
+    <a href="#connectAccount" class="tableOfContent3">Cómo acceder a su cuenta</a><br />
+    <a href="#changeLanguage" class="tableOfContent3">Cambiar el idioma</a><br />
+    <a href="#changePassword" class="tableOfContent3">Cambiar la contraseña</a><br />
+    <a href="#lostPassword" class="tableOfContent3">Contraseña perdida</a><br />
+    <a href="#accountDisconnect" class="tableOfContent3">Cerrar la sesión de su cuenta</a><br />
+    <a href="#manageMap" class="tableOfContent2">Gestión de mapas</a><br />
+    <a href="#createMap" class="tableOfContent3">Crear un nuevo mapa</a><br />
+    <a href="#updateMap" class="tableOfContent3">Editar un mapa</a><br />
+    <a href="#addMarker" class="tableOfContent4">Añadir una ubicación</a><br />
+    <a href="#updateMarker" class="tableOfContent4">Editar una ubicación</a><br />
+    <a href="#deleteMarker" class="tableOfContent4">Borrar una ubicación</a><br />
+    <a href="#showMap" class="tableOfContent2">Consulta de mapas</a><br />
+    <a href="#showPublicMap" class="tableOfContent3">Mapas públicos</a><br />
+    <a href="#showPrivateMap" class="tableOfContent3">Mapas privados</a><br />
+    <a href="#showRestrictedMap" class="tableOfContent3">Mapas de acceso restringido</a><br />
+</tableOfContent>
+
+<h2 id="manageAccount">Gestión de cuentas de usuario</h2>
+
+<h3 id="createAccount">Crear una cuenta</h3>
+
+<p>Para crear una cuenta:</p>
+<p>
+    <ul>
+        <li>Haga clic en <b>{% trans %}menu.connectName{% endtrans %}</b> en el menú.</li>
+        <li>Haga clic en el enlace <b>{% trans %}menu.newDescription{% endtrans %}</b>.</li>
+        <li>Introduzca su nombre de usuario en el campo <b>{% trans %}label.name{% endtrans %}</b>. Este campo es obligatorio.</li>
+        <li>Introduzca su dirección de correo electrónico en el campo <b>{% trans %}label.email{% endtrans %}</b>. Este campo es obligatorio.</li>
+        <li>Introduzca una contraseña para su cuenta en el campo <b>{% trans %}label.password{% endtrans %}</b>. Este campo es obligatorio y debe contener al menos 8 caracteres (letras y/o números).</li>
+        <li>Haga clic en el botón <b>{% trans %}button.createAccount{% endtrans %}</b>.</li>
+    </ul>
+</p>
+
+<h3 id="connectAccount">Cómo acceder a su cuenta</h3>
+
+<p>Para acceder a su cuenta:
+    <ul>
+        <li>Haga clic en <b>{% trans %}menu.connectName{% endtrans %}</b> en el menú.</li>
+        <li>Introduzca su dirección de correo electrónico y su contraseña.</li>
+        <li>Haga clic en el botón <b>{% trans %}button.connect{% endtrans %}</b>.</li>
+    </ul>
+</p>
+
+<h3 id="changeLanguage">Cambiar el idioma</h3>
+
+<p>Para cambiar permanentemente el idioma de su cuenta:
+    <ul>
+        <li>Acceda a su cuenta si aún no lo ha hecho.</li>
+        <li>Haga clic en <b>Su nombre</b> en el menú.</li>
+        <li>Elija el idioma deseado en la lista <b>{% trans %}label.language{% endtrans %}</b>.</li>
+        <li>Haga clic en el botón <b>{% trans %}button.update{% endtrans %}</b>.</li>
+    </ul>
+</p>
+
+<h3 id="changePassword">Cambiar la contraseña</h3>
+
+<p>Para cambiar la contraseña de su cuenta:
+    <ul>
+        <li>Acceda a su cuenta si aún no lo ha hecho.</li>
+        <li>Haga clic en <b>Su nombre</b> en el menú.</li>
+        <li>Haga clic en el botón <b>{% trans %}button.changePassword{% endtrans %}</b>.</li>
+        <li>Introduzca su contraseña actual en el campo <b>{% trans %}label.actualPassword{% endtrans %}</b>.</li>
+        <li>Introduzca una nueva contraseña en el campo <b>{% trans %}label.newPassword{% endtrans %}</b>.</li>
+        <li>Vuelva a introducir la nueva contraseña en el campo <b>{% trans %}label.confirmPassword{% endtrans %}</b>.</li>
+        <li>Haga clic en el botón <b>{% trans %}button.changePassword{% endtrans %}</b>.</li>
+    </ul>
+</p>
+
+<h3 id="lostPassword">Contraseña perdida</h3>
+
+<p>Si ha perdido su contraseña:
+    <ul>
+        <li>Haga clic en <b>{% trans %}menu.connectName{% endtrans %}</b> en el menú.</li>
+        <li>Haga clic en el enlace <b>{% trans %}button.lostPassword{% endtrans %}</b>.</li>
+        <li>Introduzca su correo electrónico en el campo <b>{% trans %}label.email{% endtrans %}</b>.</li>
+        <li>Haga clic en el botón <b>{% trans %}button.getNewPassword{% endtrans %}</b>.</li>
+        <li>Se le enviará un correo electrónico con una nueva contraseña.</li>
+    </ul>
+</p>
+
+<h3 id="accountDisconnect">Cerrar la sesión de su cuenta</h3>
+
+<p>Para salir de su cuenta cuando está conectado:
+    <ul>
+        <li>Haga clic en el botón <span class="logoutButton"><b>&#x23FB;</b></span> en el menú.</li>
+    </ul>
+</p>
+
+<h2 id="manageMap">Gestión de mapas</h2>
+
+<p>Para gestionar los mapas de su cuenta:
+    <ul>
+        <li>Haga clic en <b>{% trans %}menu.manageName{% endtrans %}</b> en el menú.</li>
+        <li>A continuación, se muestra la lista de mapas de su cuenta.</li>
+        <li>A continuación, puede crear, modificar o eliminar mapas...</li>
+    </ul>
+</p>
+
+<h3 id="createMap">Crear un nuevo mapa</h3>
+
+<p>Para crear un nuevo mapa:
+    <ul>
+        <li>Haga clic en el enlace <b>{% trans %}menu.createDescription{% endtrans %}</b> debajo de la lista.</li>
+        <li>Introduzca un nombre para el mapa en el campo <b>{% trans %}label.name{% endtrans %}</b>. Este campo es obligatorio.</li>
+        <li>Introduzca una descripción para el mapa en el campo <b>{% trans %}label.description{% endtrans %}</b>. Este campo es opcional.</li>
+        <li>Marque la casilla <b>{% trans %}label.private{% endtrans %}</b> para que este mapa sólo sea visible para usted una vez que haya iniciado la sesión.</li>
+        <li>Introduzca una contraseña para el mapa en el campo <b>{% trans %}label.password{% endtrans %}</b> sólo si desea que el mapa sea visible únicamente para determinadas personas. Tendrá que comunicar esta contraseña y el ID del mapa a estas personas. <span class="error"><b>¡Atención! No introduzca aquí la contraseña de su cuenta.</b></span></li>
+        <li>Haga clic en el botón <b>{% trans %}button.createMap{% endtrans %}</b>.</li>
+        <li>Aparecerá la página de <b>{% trans %}menu.updateDescription{% endtrans %}</b> con el nuevo mapa.</li>
+    </ul>
+</p>
+
+<h3 id="updateMap">Editar un mapa</h3>
+
+<p>Para modificar un mapa:
+    <ul>
+        <li>Haga clic en el enlace <b>{% trans %}button.update{% endtrans %}</b> a la derecha del mapa seleccionado en la lista de la pantalla <b>{% trans %}menu.manageName{% endtrans %}</b>.</li>
+        <li>Aparecerá la página <b>{% trans %}menu.updateDescription{% endtrans %}</b>.</li>
+        <li>Edite las zonas en la parte superior de la página y luego haga clic en el botón <b>{% trans %}button.update{% endtrans %}</b>.</li>
+        <li>Centre y zonifique el mapa en el área a gestionar y luego haga clic en el botón <b>{% trans %}button.updateMapCoordinates{% endtrans %}</b> para cambiar la vista por defecto del mapa.</li>
+    </ul>
+</p>
+
+<h4 id="addMarker">Añadir una ubicación</h4>
+
+<p>Para añadir una ubicación en el mapa:
+    <ul>
+        <li>Haga clic en la ubicación deseada en el mapa.</li>
+        <li>Aparece una ventana con los parámetros de la ubicación.</li>
+        <li>Introduzca un nombre para el puesto en el campo <b>{% trans %}label.name{% endtrans %}</b>. Este campo es obligatorio.</li>
+        <li>Introduzca una descripción del puesto en el campo <b>{% trans %}label.description{% endtrans %}</b>. Este campo es opcional.</li>
+        <li>Introduzca un enlace a una página web (https://...) en el campo <b>{% trans %}label.link{% endtrans %}</b>. Este campo es opcional.</li>
+        <li>Elija un icono para la ubicación en la lista de <b>{% trans %}label.icon{% endtrans %}</b>.</li>
+        <li>Haga clic en el botón <b>{% trans %}button.add{% endtrans %}</b>.</li>
+        <li>La nueva ubicación se añade al mapa.</li>
+    </ul>
+</p>
+
+<h4 id="updateMarker">Editar una ubicación</h4>
+
+<p>Para modificar una ubicación en el mapa:
+    <ul>
+        <li>Haga clic en la ubicación que desea modificar en el mapa.</li>
+        <li>Aparece una ventana con los parámetros de la ubicación.</li>
+        <li>Cambie el nombre de la ubicación en el campo <b>{% trans %}label.name{% endtrans %}</b>. Este campo es obligatorio.</li>
+        <li>Cambie la descripción de la ubicación en el campo <b>{% trans %}label.description{% endtrans %}</b>. Este campo es opcional.</li>
+        <li>Modifique el enlace a una página web (https://...) en el campo <b>{% trans %}label.link{% endtrans %}</b>. Este campo es opcional.</li>
+        <li>Elija otro icono para la ubicación en la lista de <b>{% trans %}label.icon{% endtrans %}</b>.</li>
+        <li>Haga clic en el botón <b>{% trans %}button.update{% endtrans %}</b>.</li>
+        <li>La ubicación se modifica entonces en el mapa.</li>
+    </ul>
+</p>
+
+<h4 id="deleteMarker">Borrar una ubicación</h4>
+
+<p>Para eliminar una ubicación del mapa:
+    <ul>
+        <li>Haga clic en la ubicación que desea eliminar en el mapa.</li>
+        <li>Aparece una ventana con los parámetros de la ubicación.</li>
+        <li>Haga clic en el botón <b>{% trans %}button.remove{% endtrans %}</b>.</li>
+        <li>A continuación, la ubicación se elimina del mapa.</li>
+    </ul>
+</p>
+
+<h2 id="showMap">Consulta de mapas</h2>
+
+<h3 id="showPublicMap">Mapas públicos</h3>
+
+<p>Consultar los mapas públicos:
+    <ul>
+        <li>Haga clic en <b>{% trans %}menu.showName{% endtrans %}</b> en el menú.</li>
+        <li>Se muestra la lista de mapas públicos.</li>
+        <li>Haga clic en el nombre de un mapa para consultarlo.</li>
+    </ul>
+</p>
+
+<h3 id="showPrivateMap">Mapas privados</h3>
+
+<p>Consultar mapas privados:
+    <ul>
+        <li>Haga clic en <b>{% trans %}menu.showName{% endtrans %}</b> en el menú.</li>
+        <li>Se muestra la lista de mapas públicos.</li>
+        <li>Si está conectado, también se muestran sus mapas privados y restringidos.</li>
+        <li>Haga clic en el nombre de un mapa para consultarlo.</li>
+    </ul>
+</p>
+
+<h3 id="showRestrictedMap">Mapas de acceso restringido</h3>
+
+<p>Para ver los mapas con acceso restringido:
+    <ul>
+        <li>Haga clic en <b>{% trans %}menu.showName{% endtrans %}</b> en el menú.</li>
+        <li>Debajo de la lista, en la sección <b>{% trans %}subtitle.accessRestrictedMap{% endtrans %}</b>:
+            <ul>
+                <li>Introduzca el identificador del mapa en el campo <b>{% trans %}label.mapId{% endtrans %}</b>.</li>
+                <li>Introduzca la contraseña del mapa en el campo <b>{% trans %}label.password{% endtrans %}</b>.</li>
+                <li>Haga clic en el botón <b>{% trans %}button.showMap{% endtrans %}</b>.</li>
+                <li>Inténtalo con:
+                    <ul>
+                        <li>Identificador: 2</li>
+                        <li>Contraseña: pass</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</p>

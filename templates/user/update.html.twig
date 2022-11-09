@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}OMG - OpenMapGenerator - {% trans %}menu.accountDescription{% endtrans %}{% endblock %}
+
+{% block body %}
+
+<h1>{% trans %}menu.accountDescription{% endtrans %}</h1>
+
+<div class="formDiv">
+
+  {{ form_start(form) }}
+
+    {{ form_label(form.name) }}
+    {{ form_widget(form.name) }}
+    {{ form_errors(form.name) }}
+
+    {{ form_label(form.language) }}
+    {{ form_widget(form.language) }}
+    {{ form_errors(form.language) }}
+
+    <div class="formButtons">
+        {{ form_row(form.save) }}
+        {{ form_row(form.reset) }}
+    </div>
+
+  {{ form_end(form) }}
+    <p>&nbsp;</p>
+    <div class="formButtons">
+        <div><a href="{{ path('user.update.password', {'id': app.user.id}) }}" class="button-info">{% trans %}button.changePassword{% endtrans %}</a></div>
+    </div>
+
+</div>
+
+{% endblock %}
+

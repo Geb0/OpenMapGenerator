@@ -1,0 +1,57 @@
+:root {
+    --contentPadding: 7px;
+    --contentMinHeight: 240px;
+    --tabPadding: 7px 13px;
+    --tabBorderRadius: 7px;
+
+    --borderWeight: 1px;
+
+    --pageBgColor: white;
+    --tabsBgColor: lightgrey;
+    --hoverTabBgColor: #ffffd0;
+    --tabsBorderColor: grey;
+}
+
+TABS, TABS TABSCONTENT {
+    display: inline-block;
+    width: 100%;
+}
+TABS TABSHEADER {
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+TABS TABSCONTENT {
+    margin: 0;
+    padding: var(--contentPadding);
+    min-height: var(--contentMinHeight);
+    border-left: var(--borderWeight) solid var(--tabsBorderColor);
+    border-right: var(--borderWeight) solid var(--tabsBorderColor);
+    border-bottom: var(--borderWeight) solid var(--tabsBorderColor);
+}
+TABS TABSHEADER TAB {
+    padding: var(--tabPadding);
+    background-color: var(--tabsBgColor);
+    border: var(--borderWeight) solid var(--tabsBorderColor);
+    border-radius: var(--tabBorderRadius) var(--tabBorderRadius) 0 0;
+    cursor: pointer;
+}
+TABS TABSHEADER TAB:HOVER {
+    background-color: var(--hoverTabBgColor);
+}
+TABS TABSHEADER TAB.currentTab {
+    background-color: var(--pageBgColor);
+    border-bottom: var(--borderWeight) solid var(--pageBgColor);
+}
+TABS TABSHEADER TAB:last-child {
+    flex: 1;
+    background-color: var(--pageBgColor);
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: var(--borderWeight) solid var(--tabsBorderColor);
+    border-radius: none;
+    cursor: none;
+}

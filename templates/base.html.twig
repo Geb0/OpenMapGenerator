@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+{% include 'head.html.twig' %}
+<title>{% block title %}OMG - OpenMapGenerator - Default title{% endblock %}</title>
+</head>
+<body>
+{% include 'notification.html.twig' %}
+<main>
+<sitename>
+<div id="fullsitename"><img src="/logo.png" /> OMG - OpenMapGenerator - v1.1</div>
+<div id="minisitename"><img src="/logo.png" /> OMG - v1.1</div>
+</sitename>
+{% include 'languages.html.twig' %}
+{% include 'menu.html.twig' %}
+<content>
+{% block body %}
+<h1>Default title</h1>
+<p>Default content</p>
+{% endblock %}
+</content>
+</main>
+<bottomBanner>
+  <span>Copyright &copy; {{ "now"|date("Y") }}, {{ editorName }}, <a href="{{ path('help.license') }}">{% trans %}bottom.license{% endtrans %}</a></span><br /><span><a href="{{ path('help.tou') }}">{% trans %}bottom.tou{% endtrans %}</a></span> - <span><a href="{{ path('home.support') }}">{% trans %}bottom.support{% endtrans %}</a></span>
+</bottomBanner>
+</body>
+</html>

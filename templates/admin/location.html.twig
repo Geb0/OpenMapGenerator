@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}OMG - OpenMapGenerator - Update user map location{% endblock %}
+
+{% block body %}
+
+<h1>Update user map location</h1>
+
+<div class="formDiv">
+
+  {{ form_start(form) }}
+
+    <div>
+        <label>Map</label>
+        <input type="text" value="{{ location.map.id }} - {{ location.map.name }}" readonly="readonly" />
+    </div>
+    <div>
+        <label>User</label>
+        <input type="text" value="{{ location.map.user.id }} - {{ location.map.user.name }}" readonly="readonly" />
+    </div>
+    <div>
+        <label>Identifier</label>
+        <input type="text" value="{{ location.id }}" readonly="readonly" />
+    </div>
+
+    {{ form_row(form.name) }}
+    {{ form_row(form.description) }}
+    {{ form_row(form.latitude) }}
+    {{ form_row(form.longitude) }}
+    {{ form_row(form.icon) }}
+    {{ form_row(form.link) }}
+    <div>
+        <a href="{{ location.link }}" target="_blank">Look at linked page</a>
+    </div>
+
+    <div class="formButtons">
+        {{ form_row(form.save) }}
+        {{ form_row(form.reset) }}
+    </div>
+
+  {{ form_end(form) }}
+</div>
+
+{% endblock %}

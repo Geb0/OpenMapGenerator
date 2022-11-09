@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}OMG - OpenMapGenerator - Administration - Users{% endblock %}
+
+{% block body %}
+<h1>Administration - Users</h1>
+<style>MAIN { width: 100% !important; }</style>
+<table class="fullwidth oddEven highlightRow" style="font-size: 80%;">
+  <thead>
+    <tr>
+      <th class="withRightBorder">Id</th>
+      <th class="withRightBorder">Name</th>
+      <th class="withRightBorder">E-mail</th>
+      <th class="withRightBorder">Roles</th>
+      <th class="withRightBorder">Language</th>
+      <th class="withRightBorder">Recovery key</th>
+      <th>Updated</th>
+    </tr>
+  </thead>
+  <tbody>
+{% for user in users %}
+    <tr>
+      <td class="withRightBorder">{{ user.id }}</td>
+      <td class="withRightBorder"><a href="{{ path('admin.user', {'id': user.id}) }}">{{ user.name }}</a></td>
+      <td class="withRightBorder"><a href="mailto:{{ user.email }}?Subject=Message from OMG support">{{ user.email }}</a></td>
+      <td class="withRightBorder">{% for role in user.roles %}{{ role }} {% endfor %}</td>
+      <td class="withRightBorder">{{ user.language }}</td>
+      <td class="withRightBorder">{{ user.recoverkey }}</td>
+      <td class="nowrap">{% if user.updatedAt %}{{ user.updatedAt | date('Y-m-d H-i-s') }}{% endif %}</td>
+    </tr>
+{% endfor %}
+  </tbody>
+</table>
+<div class="navigation">{{ knp_pagination_render(users) }}</div>
+
+{% endblock %}

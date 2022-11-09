@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}OMG - OpenMapGenerator - {% trans %}menu.manageDescription{% endtrans %}{% endblock %}
+
+{% block body %}
+<h1>{% trans %}menu.manageDescription{% endtrans %}</h1>
+
+{% if maps.getTotalItemCount > 0 %}
+<p>{% trans with { '{count}': maps.getTotalItemCount} %}label.countFoundMaps{% endtrans %}</p>
+<table class="fullwidth highlightRow">
+  <thead>
+    <tr>
+      <th>{% trans %}label.id{% endtrans %}</th>
+      <th>{% trans %}label.nameDescription{% endtrans %}</th>
+                        <th>(*)</th>
+                        <th>{% trans %}label.actions{% endtrans %}</th>
+      </tr>
+  </thead>
+  <tbody>
+{% for map in maps %}
+    <tr>
+      <td>{{ map.id }}</td>
+      <td>
+          <b>{{ map.name }}</b>
+          <br />
+          {{ map.description }}
+      </td>
+      <td class=""nowrap">
+        {% if map.private %}P {% endif %}
+        {% if map.password != '' %}R <span class="withPointer" title="{% trans %}button.showMapPassword{% endtrans %}" onclick="alert('{% trans with { '{map}': map.id, '{password}': map.password } %}info.showPassword{% endtrans %}')">&#128065;</span>{% endif %}
+      </td>
+      <td class="nowrap">
+          <a href="{{ path('map.manage.update', {'id': map.id}) }}#screenInitialPosition">{% trans %}button.update{% endtrans %}</a>
+          &nbsp;
+          <a href="{{ path('map.manage.todelete', {'id': map.id}) }}">{% trans %}button.delete{% endtrans %}</a>
+      </td>
+    </tr>
+{% endfor %}
+  </tbody>
+</table>
+<div class="navigation">{{ knp_pagination_render(maps) }}</div>
+{% else %}
+<p>{% trans %}label.noMapFound{% endtrans %}</p>
+{% endif %}
+<p>{% trans %}label.mapListLegend{% endtrans %}</p>
+<p>&nbsp;</p>
+<p class="center"><a class="button-primary" href="{{ path('map.manage.new') }}">{% trans %}menu.createDescription{% endtrans %}</a></p>
+
+{% endblock %}
